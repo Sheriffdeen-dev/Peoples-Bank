@@ -82,6 +82,17 @@
 .promo-main .slick-active {
     display: block !important;
 }
+ @media (max-width: 767px) {
+    /* Show the mobile menus when the 'in' class is added by JS */
+    .mobile-menu.in {
+        display: flex !important;
+        flex-direction: column;
+    }
+    /* Allow the navigation container to scroll if the menu is long */
+    .mast-wrap .inner-wrap.nav {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
 </style>
 </head>
 
@@ -595,7 +606,7 @@
 <div class="inner-wrap">
 <article>
 <span>
-<img src="/home/fiFiles/static/images/12-202603-News-Hartford.jpg" alt="Hartford Banking Center" class="promo-img">
+<img src="/static/image/12-202603-News-Hartford.jpg" alt="Hartford Banking Center" class="promo-img">
 <h2>Simple just moved in - Hartford Banking Center now open</h2>
 <p>PeoplesBank has added to its Connecticut footprint with a new banking center at 151 Asylum Street in Hartford. Stop by today for exclusive, limited time offers.</p>
 </span>
@@ -603,7 +614,7 @@
 </article>
 <article>
 <span>
-<img src="/home/fiFiles/static/images/12-202506-News-PeoplesBank-Arena.jpg" alt="PeoplesBank Arena" class="promo-img">
+<img src="/static/image/12-202506-News-PeoplesBank-Arena.jpg" alt="PeoplesBank Arena" class="promo-img">
 <h2>PeoplesBank Arena in Hartford</h2>
 <p>PeoplesBank has secured the naming rights to Hartford's 16,000-seat world-class sports and entertainment venue, which will be called PeoplesBank Arena.</p>
 </span>
@@ -611,7 +622,7 @@
 </article>
 <article>
 <span>
-<img src="/home/fiFiles/static/images/12-202112-News-Corporate-Responsibility.jpg" alt="Corporate Responsibility" class="promo-img">
+<img src="/static/image/12-202112-News-Corporate-Responsibility.jpg" alt="Corporate Responsibility" class="promo-img">
 <h2>It's Not Just Corporate Responsibility, It's a Human Responsibility</h2>
 <p>As a mutual bank, giving back is part of our culture, woven into the fabric of who we are and what we stand for.</p>
 </span>
@@ -760,6 +771,23 @@ footer .foot-top::before {
 background-image: url(/static/image/201705-New-Site-Footer.jpg);
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.querySelector('.navbar-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            // Toggle the hamburger icon animation
+            this.classList.toggle('collapsed');
+            
+            // Toggle the 'in' class on all mobile menu elements to show/hide them
+            document.querySelectorAll('.mobile-menu').forEach(function(menu) {
+                menu.classList.toggle('in');
+            });
+        });
+    }
+});
+</script>
 
 </body>
 </html>
