@@ -1,0 +1,1766 @@
+
+
+
+
+/* TPD */
+/* **************************************************/
+
+.modal p, .modal h1 {
+	text-align: left;
+}
+
+.modal-footer a.btn:link, 
+.modal-footer a.btn:visited, 
+.modal-footer a.btn:hover, 
+.modal-footer a.btn:active {
+	text-decoration: none;
+}
+.modal h1{
+	font-size: 33px;
+	margin: 10px 0px;
+}
+
+/*
+.modal .btn-primary {
+background-color: #F8981D;
+background-image: none;
+border-color: #357EBD;
+color: #FFFFFF;
+}
+ */
+
+@media (max-width: 768px){
+	.modal-body{
+		max-height: 300px;
+		overflow: scroll;
+	}
+}
+.modal-footer a.btn:link, 
+.modal-footer a.btn:visited, 
+.modal-footer a.btn:hover, 
+.modal-footer a.btn:active {
+	text-decoration: none;
+}
+
+.promoMain > .slides > li{
+	display:none;
+}
+
+
+.content a[name],.anchor_link, .anchor{
+	scroll-margin-top:120px;
+	/*
+	padding-top:120px;
+	margin-top:-120px;
+	*/
+	display: block;
+}
+@media (min-width: 1199px){
+	
+.content a[name],.anchor_link, .anchor{
+	scroll-margin-top:150px;
+	/*
+	padding-top:150px;
+	margin-top:-150px;
+	*/
+	display: block;
+}
+}
+
+/*  make the missing link popovers fancier */
+.missing-link-title {
+	color: #a94442 !important;
+	background-color: #f2dede !important;
+	border-color: #ebccd1 !important;
+}
+
+/* ****TCalc Fixes*/
+#calccontent input{
+	margin: 0px 10px;
+}
+
+.cTimeValue input, .cTimeValue span, .cTimeValue label{
+	display: inline-block !important;
+	margin: 0px 4px !important;
+	position: initial !important;
+	padding: 0 !important;
+}
+.cTimeValue input{
+	position: relative !important;
+	top: 0px !important;
+}
+.cTimeValue input{width: auto !important;}
+.cTimeValue th, .cTimeValue th p{
+	color: white !important;
+}
+.cTimeValue th{
+	/*background:	#0f2652 !important;*/
+}
+.ie11 .cTimeValue input[type=radio],
+.ie .cTimeValue input[type=radio]{
+	top: 10px !important;
+}
+
+/**table fix **/
+/*
+.tablecontent1, .tablecontent2, .wc_table th, .content td, .content th{width:auto;}
+
+
+tr td.table-header{
+border-radius: 0px 0px 0 0;
+-webkit-border-radius: 0px 0px 0 0;
+-moz-border-radius: 0px 0px 0 0;
+}
+tr td.table-header:first-of-type{
+border-radius: 4px 0px 0 0;
+-webkit-border-radius: 4px 0px 0 0;
+-moz-border-radius: 4px 0px 0 0;
+}
+tr td.table-header:last-of-type{
+border-radius: 0px 4px 0 0;
+-webkit-border-radius: 0px 4px 0 0;
+-moz-border-radius: 0px 4px 0 0;
+}
+tr td.table-header:last-of-type:first-of-type{
+border-radius: 4px 4px 0 0;
+-webkit-border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+}
+ */
+
+
+
+/*
+embedded form left align fix
+td{
+width: auto;
+display: block;
+float: left;
+}
+ */
+
+/** clickableDiv style **/
+.clickableDiv *:hover, .clickableDiv:hover{cursor:pointer}
+
+
+/*
+.bankNameH1{ position:absolute; top: -40px; height: 1px; width: 1px; overflow: hidden; }
+ */
+
+.searchResults table {
+border: none;
+margin: 0;
+}
+
+.searchResults input {
+background: #fff;
+border: 1px solid;
+border-radius: 3px;
+font-size: 20px;
+height: 60px;
+line-height: 60px;
+padding: 0 20px;
+}
+.searchResults input:hover,
+.searchResults input:focus,
+.searchResults input:active {
+background: #0061aa none repeat scroll 0 0;
+color: #fff;
+}
+
+input#gsa_search {
+border: 1px solid #ddd;
+border-radius: 3px;
+box-shadow: none;
+color: #0061aa ;
+font-size: 24px;
+height: 60px;
+line-height: 60px;
+min-width: 100%;
+margin: 20px;
+padding: 0 20px;
+}
+.searchResults input#gsa_search:hover,
+.searchResults input#gsa_search:focus,
+.searchResults input#gsa_search:active {
+background: #fff;
+color: #0061aa ;
+}
+
+@media (max-width: 700px) {
+input#gsa_search {
+height: 40px;
+line-height: 40px;
+padding: 0 5px;
+width: 200px;
+}
+
+.searchResults input {
+height: 40px;
+line-height: 40px;
+}
+}
+/*
+.editmode_workarea .headerImage:before{
+content: "This image is only displaying here because you're in workarea";
+color: white;
+position:absolute;
+top: 40px;
+font-size: 1.5em;
+background: rgba(0,0,0,.5);
+}
+ */
+
+
+.sub-menu{/*display: none;*/ right: auto; left:2.5%; }
+.sub-menu.open{
+	/*
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	transition-duration: 0s;
+	width: 95vw;
+	 */
+}
+
+#megaMe{ position:relative;}
+#megaMe, #megaMe .nav-menu, #megaMe li{position: static;}
+
+
+
+.nav-column > ul > .level-one > a{
+	font-size: 24px; 
+	color: #98c2e5; 
+	flex-grow: 0;
+	font-family: "Roboto", Arial, Helvetica, sans-serif; 
+	font-weight: 500; 
+	padding: 0px; 
+	/* position: relative; */
+}
+.nav-column > ul > .level-two > a{
+	font-size: 16px; 
+	color: white; 
+	flex-grow: 0;
+	font-family: "Roboto", Arial, Helvetica, sans-serif; 
+	font-weight: 300; 
+	padding: 0px; 
+	/* position: relative; */
+}
+.content a{display: inline-block;}
+.compareBoxSummary a:not([class^="btn"]){display: inline; }
+
+
+.clickable-link:hover a:not([class^="btn"]) {
+	color: #004582 !important;
+}
+
+.clickable-link iframe {
+	height:100%;
+	width:100%;
+	border: none;
+}
+
+#back .promo-small, #backwealth .promo-small{
+	height:auto;
+}
+
+.awards img {
+	float: left;
+	width: 70px;
+	/*height: 70px;*/
+	padding: 2px;
+}
+
+
+.question{
+	clear:both;
+	color: #333;
+	background-color: #f5f5f5;
+	border:  1px solid #ddd;
+	border-color: #ddd;
+	padding: 15px;
+	/*border-bottom: 1px solid transparent;*/
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	/*text-decoration:underline;*/
+	font-size: 16px;
+	margin-top:5px;
+}
+.question.active{
+	border-bottom: 1px solid transparent;
+	margin-bottom:0px;
+}
+.question:hover{cursor:pointer;}
+
+
+.question .plus-icon, .question .minus-icon{
+	margin-right: 8px;
+}
+
+.panel-title a{display:block; width:100%;}
+.plusSign, .minusSign{float:right;}
+
+.answer{
+	margin-bottom: 00px;
+	background-color: #fff;
+	border: 1px solid  #ddd;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	display:none;
+	padding: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;	
+}
+
+.answer.active, .answer.show{
+	margin-bottom:5px;
+	-webkit-transition: none;
+	transition: none;
+}
+
+.disclaimer{
+	font-style: italic;
+	text-align: left;
+}
+
+	.content img{
+		max-width: 100%;
+	}
+
+img.img-right{
+	float: right;
+	margin-left: 20px;
+	/*
+	max-height: 200px;
+	max-width: 200px;*/
+}
+
+a.img-right-sm{
+	display:block;
+}
+img.img-right-sm{
+	float: right;
+	margin-left: 30px;
+	margin-bottom:14px;
+	margin-top:14px;
+	width: 300px;
+}
+img.img-left-sm{
+	float: left;
+	margin-right: 30px;
+	margin-top:14px;
+	width: 300px;
+}
+img.img-blog{
+float: left;
+	margin-right: 30px;
+	margin-bottom:14px;
+width: 20%;
+max-width: 200px;
+}
+img.img-leadership{
+	max-width: 150px;
+	float: left;
+	margin-right: 30px;
+	margin-top:14px;
+	margin-bottom: 14px;
+	clear: both;
+	width: 180px;
+}
+
+@media (max-width: 991px){
+	img.img-left-sm, img.img-right-sm, img.img-blog, img.img-leadership{
+		max-width: 100%;
+	}
+
+}
+
+  @media (max-width: 767px) {
+	img.img-left-sm, img.img-right-sm, img.img-blog, img.img-leadership{
+		width: 100%;
+	}
+}
+
+.compareSection {
+	clear: both;
+}
+
+.txtarea {
+	padding: 10px;
+	background-color: #EEEEEE;
+	border: solid 1px #DDDDDD;
+	overflow: scroll;
+	width: 100%;
+	height: 108px;
+	resize: both;
+}
+/*
+.btn-submit {
+	color: #000080 !important;
+	text-decoration: none !important;
+}
+*/
+.calc_iframe{
+	border: none;
+	width: 100%;
+	min-height: 1000px;
+	height:auto;
+}
+
+.placeholder{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: flex-start;
+	width: 32%;
+	/*background: #e9e9e9;*/
+	margin-bottom: 2em;
+}
+
+@media (max-width: 991px){
+.placeholder{
+	display: none;
+	
+}
+
+.compareSection .compareBox{
+margin-bottom: 1em;
+}
+	
+}
+
+/*.nav-content{min-width:670px;}*/
+@media (min-width: 1490px){
+	.nav-content{min-width:900px;}
+}
+
+#consultant_search input, 
+#consultant_name_search input{ border: 1px solid grey;}
+#mortgage_rates_dropdown input{ border: 1px solid grey;}
+
+#ms_consultants{ display: none; }
+#ms_consultants_toggle{
+	display: flex !important; 
+}
+
+@media (min-width: 666px){
+#ms_consultants_toggle{
+left: 560px;
+}	
+	
+}
+
+
+.subMenuPanel .editorLink{ color: white !important;}
+
+
+
+
+footer .foot-top::before {
+	background-image: url(../../../../fiFiles/static/images/footer.jpg);
+}
+#wealth footer .foot-top::before {
+	background-image: url(../../../../fiFiles/static/images/footer-wealth.jpg);
+}
+
+@media (max-width: 767px){ 
+	nav {
+		width: 100%;
+	}
+	.mobile-menu {margin: 0;}
+}
+
+.isize {
+	border: 0;
+}
+
+iframe.video {
+	z-index: 5;
+}
+
+.nav-column > ul > .level-two > a {
+	text-transform:none;
+}
+
+
+@media (max-width: 420px){
+	.nav-header .logo img {
+		width: 85%;
+	}	
+	.nav-header .logo a {
+		text-align: left;
+	}
+	.featured h3 span img {
+		height: 1em;
+	}
+	.featured h3 span {
+		height: 2em;
+		width: 2em;
+	}
+
+	.boxes-small .promo-img{
+		min-height:80px !important;
+		background-color: #efefef;
+	}
+
+}
+
+
+
+.login-ob form input.sr-only{
+	width: 1%;
+	margin:0px;
+	padding:0px;
+}
+
+
+@media (min-width: 768px){
+	/*a[href^="tel"]:link, a[href^="tel"]:visited, a[href^="tel"]:hover {
+		pointer-events: none;
+		cursor: default;
+	}*/
+}
+
+
+.not-a-link, .not-a-link:hover{
+	pointer-events: none;
+	cursor: default;
+}
+
+.level-one a:hover, .level-one:hover a{
+	color: #98c2e5 !important;
+}
+
+
+.communitySection .editorLink{
+	color: white !important;
+	position:absolute !important;
+	z-index: 05221989 !important;
+	padding: 5px 10px;
+}
+
+
+.center{
+	text-align: center;
+}
+
+
+.compareBoxDetails .panel-title a.firstLoad .plusSign{
+	display: inline;
+}
+.compareBoxDetails .panel-title a.firstLoad .minusSign{
+	display: none;
+}
+
+
+
+.sidebar li a{
+	display:inline-block;
+}
+
+
+.blog-list{
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+}
+.blog-list li{
+	list-style: none;
+	border-top: 1px solid #676767;
+	padding: 8px 4px;
+}
+.blog-list li:last-child{
+	border-bottom: 1px solid #676767;
+}
+
+.dropdown-menu{
+	background-color: #373737 !important;
+}
+
+.sub-nav-wrap {
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transition: all .3s ease;
+	
+}
+
+.sub-nav-wrap.show {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	margin: 0px !important;
+}
+
+
+@media (max-width: 767px){
+.mast-wrap{
+	overflow: hidden;
+}
+.sub-nav-wrap {
+	overflow: auto;
+    left: .5em;
+		/*width: calc(100% - 1.5em) !important;*/
+	}
+
+}
+
+
+.quick-links a{
+	display: block !important;
+}
+
+
+.editmode_workarea #backTopImage{
+	min-height:200px;
+}
+
+
+.awards-boxes h2{
+	margin-bottom: 0px;
+}
+.awards-boxes h3{
+	margin-top: .5em;
+	color: #373737;
+}
+	
+
+
+.sub-menu .nav-promo h3 a {
+	text-transform:none !important;
+}
+
+
+#back .mobile-menu .nav-item,
+#backwealth .mobile-menu .nav-item{
+	text-align: left !important	;
+}
+
+
+@media (max-width: 767px){
+	.not-in:not(.in){
+		/*display: none;*/
+	}
+	.not-in.in{
+		/*display: block;*/
+	}
+	.login-wrap:not(.in){
+		display:none;
+	}
+	.login-wrap.in {
+		display: block;
+	}
+}
+
+
+
+.desktop-only{
+	display: none;
+}
+.mobile-only{
+	display: block;
+}
+
+@media (min-width: 768px) {
+.desktop-only{
+	display: block;
+}
+.mobile-only{
+	display: none;
+}
+}
+
+.whiteLinks p a{
+	color: white;
+}
+
+
+
+.nav-desktop{
+	display: none !important;
+}
+.nav-mobile{
+	display:flex !important;
+}
+@media (min-width: 768px){
+	.nav-desktop{
+		display: flex !important;
+	}
+	.nav-mobile{
+		display:none !important;
+	}
+
+}
+
+.nav-desktop:hover,
+.nav-desktop:hover > a{
+	background: #373737;
+	color: white !important;
+}
+
+.compareBoxHeader.calcBoxHeader .iconHolder img{
+max-width: 100%;
+}
+
+
+	section.nav{
+		justify-content: flex-end !important;
+	}
+
+
+
+	.promo-img.imageHolder.white{
+		background-color:#ffffff;
+	}
+
+
+	.iframe-fix{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background-color:#efefef;
+	}
+
+
+	@media (max-width: 767px){
+		.promo-main .promo-content .image-holder {
+			max-height: none !important;
+		}
+	}
+
+
+
+	/* table shadow */
+.table-shadow{
+    position:relative;
+}
+.table-shadow:after{
+	content:" ";
+	position:absolute;
+	right:-2px;
+	/* 235, 239, 242 is the table border color */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 70%, rgba(235,239,242,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 70%,rgba(235,239,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0) 70%,rgba(235,239,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ebeff2',GradientType=1 ); /* IE6-9 */
+	width: 25%;
+	top:1px;
+	bottom:0;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.table-shadow[data-shadow-after=hide]:after{
+	opacity: 0;
+	width:0px;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.table-shadow:before{
+	content:" ";
+	position:absolute;
+	left:0px;
+	/* 235, 239, 242 is the table border color */
+	background: -moz-linear-gradient(left, rgba(235,239,242,1) 0%, rgba(255,255,255,0) 30%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(235,239,242,1) 0%,rgba(255,255,255,0) 30%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(235,239,242,1) 0%,rgba(255,255,255,0) 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeff2', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+	width: 25%;
+	top:1px;
+	bottom:0;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.table-shadow[data-shadow-before=hide]:before{
+	opacity: 0;
+	width:0px;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+/* end table shadow */
+
+
+.content .table-striped [class^="btn"]{
+	display:inline-block !important;
+}
+
+
+
+@media (max-width: 767px){
+.mobile-alert-button{
+	display: block !important;
+	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	right: 15px;
+	margin-bottom:15px;
+}
+.mobile-alert-button .btn-alert{
+	width: 100%;
+	margin: 0px;
+}
+.login-personal{
+	margin-bottom:5px;
+}
+#alert{
+	display: none !important;
+	transition: none !important;
+	-webkit-transition: none !important;
+  -webkit-transition-duration: 0.0s;
+  transition-duration: 0.0s;
+	
+}
+#alert.in{
+	display: block !important;
+}
+}
+
+
+
+.editmode_workarea .nav-column.nav-promo .editorLink{
+ top: 150px;
+}
+
+.btn-ob-login{
+height: calc(18px + 1.5em);
+}
+
+
+
+
+.blog-wrapper article{
+	display: inline-block;
+}
+
+
+
+.android .featured:hover .icon .front,
+.android .featured:hover .icon .back,
+.android .featured:hover .icon, 
+.ios .featured:hover .icon,
+.ios .featured:hover .icon .front,
+.ios .featured:hover .icon .back{
+	-webkit-transition: none !important;
+	transition: none !important;
+	transform: none !important;
+}
+
+
+
+
+.promo-arrow::after{
+	content: '';
+}
+
+
+.content h3{
+	color: #717073;
+}
+
+
+.bullets-left ul{
+	text-align: left;
+}
+
+
+.mobile-padding{
+	padding: 3em 2em !important;
+}
+
+
+
+
+.select-consultant, 
+.select-consultant-namesearch {
+   -webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+   -webkit-border-radius: 0px;
+   /*-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);*/
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   /*background-image: url(../images/arrow.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
+   background-image: url(../images/arrow.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #7f7f7f;
+   /*color: #555;*/
+   font-size: inherit;
+   margin: 0px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+	 height:45px;
+	 display:inline;
+	 top: -1px;
+    position: relative;
+		margin-right: 4px;
+}
+@media (min-width: 420px){
+.select-consultant, .select-consultant-namesearch {
+   width: 300px;
+	
+}
+}
+
+.ie11 .select-consultant, .ie .select-consultant,
+.ie11 .select-consultant-namesearch, .ie .select-consultant-namesearch{
+	background-image: none !important;
+}
+
+.submit-consultant{
+
+}
+#back .nav-content .nav-mobile, #backwealth .nav-content .nav-mobile{
+	text-align: left !important;
+}
+
+
+select.select-mortgage_rates_dropdown {
+   -webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+   -webkit-border-radius: 0px;
+   /*-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);*/
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   /*background-image: url(../images/arrow.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
+   background-image: url(../images/arrow.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #7f7f7f;
+   /*color: #555;*/
+   font-size: inherit;
+   margin: 0px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+	 height:45px;
+	 display:inline;
+	 top: -1px;
+    position: relative;
+		margin-right: 4px;
+}
+@media (min-width: 420px){
+.select-mortgage_rates_dropdown {
+   width: 300px;
+	
+}
+}
+
+.ie11 .select-mortgage_rates_dropdown, .ie .select-mortgage_rates_dropdown{
+	background-image: none !important;
+}
+
+.white-link{
+	color: white;
+}
+
+
+hr{
+	border: 0px;
+	border-bottom:	1px solid #277eb9;
+}
+
+
+.blog-wrapper h2 a{
+	display: inline;
+}
+
+.blog-wrapper article{
+	margin-top: 0px !important;
+}
+
+
+
+.rates_mortgage_disclosure{
+	padding-top: 10px !important;
+	font-size: 13px !important	;
+}
+
+.compareSection{
+	margin-top: 15px;
+}
+
+
+#vidbox iframe{
+
+	width: 100%;
+}
+
+
+.featured.mobile-clickable h3{
+align-self: flex-start;
+}
+
+
+
+.ie .blog-wrap article span, .ie11 .blog-wrap article span{
+	width: 100%;
+}
+
+.pedlarPage .promo-content{
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+}
+
+.supports-no-objectfit .pedlarPage .promo-content .image-holder{
+	padding-bottom: 35.353535%;
+}
+@media(max-width: 767px){
+	.supports-no-objectfit .pedlarPage .promo-content .image-holder{
+		padding-bottom: 0;
+	}
+}
+
+.mortgage_home_rates_container{
+	padding: 15px 0;
+	position:relative;	
+}
+
+.mortgage_home_rates_btns {
+	position:absolute;
+	margin-top:10px;
+	right:15px;
+	padding:0;
+	background-color:transparent;
+}
+@media(max-width:767px){
+.mortgage_home_rates_container{
+	padding:0;
+	position:relative;	
+}
+.mortgage_home_rates_btns {
+	position:relative;
+	right:unset;
+	background-color:#e9e9e9;	
+	padding:15px 0 0 0;
+}
+}
+@media(max-width:500px){
+	.mortgage_home_rates_btns > a {
+	display:block;
+	width:95%;
+	margin:auto;
+	}
+}
+
+@media(max-width:767px){
+body#mortgage_home .centerAlignTopHolder .promo-small.centerAlignTop {
+	padding-top:62.5%; padding-bottom:0; /* 62.5% = 1500/2400 ratio */
+	position:relative;
+	width:100%;
+}
+body#mortgage_home .centerAlignTopHolder .promo-small.centerAlignTop > .inner {
+	position:absolute;
+ 	height:100%;
+ 	width:90%;
+ 	top:0;
+ 	bottom:0;
+ 	left:0;
+ 	right:0;
+ 	display: -webkit-box;
+  		display: -webkit-flex;
+  		display: -ms-flexbox;
+  	display: flex;
+  	-webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+}
+
+.broker-img {
+	width: 147px;
+	float: right;
+}
+
+
+.apply-online-body .apply-feature-rates a, .apply-online-body .apply-feature-rates a:link, .apply-online-body .apply-feature-rates a:visited {
+	margin-top: 7.5px;
+    font-size: .85em;
+}
+
+.promo-content.slick-slide .feature-wrap{
+	padding: 1.4em 1em;
+}
+.apply-feature:nth-last-of-type(1){
+	margin: 0;
+}
+.apply-online-body{
+    padding: 1.5em 1em;
+    width: 100%;
+}
+
+.mtg_consultants_band {
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		align-content:flex-start;
+		justify-content:flex-start;
+	}
+	.mtg_consultants_zone {
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		flex:0 1 auto;
+		align-content:flex-start;
+		justify-content:flex-start;
+	}
+	.mtg_consultants_feature_wrap {
+		width:100%;
+		display:flex;
+		flex-wrap:nowrap;
+		flex:0 1 auto;
+		align-content:flex-start;
+		justify-content:flex-start;
+		align-items:center;
+	}
+	.mtg_consultants_feature {
+		width:auto;
+		display:block;
+		flex:0 1 auto;
+		margin: 0 10px 0 0;
+	}
+	@media (min-width: 992px) and (max-width:1255px){
+		.mtg_consultants_feature_wrap {
+			flex-wrap:wrap;
+		}
+		.mtg_consultants_feature {
+			width:100%;
+			display:block;
+			flex:0 1 auto;
+			margin: 0px 0;
+		}
+		.mtg_consultants_feature.mid {
+			width:300px;
+			margin: 10px 0;
+			text-align:center;
+		}
+	}
+	@media (max-width:830px){
+		.mtg_consultants_feature_wrap {
+			flex-wrap:wrap;
+		}
+		.mtg_consultants_feature {
+			width:100%;
+			display:block;
+			flex:0 1 auto;
+			margin: 0px 0;
+		}
+		.mtg_consultants_feature.mid {
+			width:300px;
+			margin: 10px 0;
+			text-align:center;
+		}
+	}
+	
+/********** FDIC Banner ****************/
+
+@media (min-width: 768px) and ( max-width:1249px){
+	.nav-content li a:not(.btn) {
+		font-size:14px;
+	}
+}
+
+.uti-wrap.mobile-menu {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 15px !important;
+	 /*
+	 	box-shadow:0px -3px 5px 0px inset rgba(0, 0, 0, 0.3);
+	 */
+}
+
+.inner-wrap.nav {
+	max-width:100%;	
+}
+
+.uti,
+.login-personal {
+	margin-right:2.5%;
+}
+#compliance-bar, #mobile-compliance-bar { flex: 1 1 auto;}
+#mobile-compliance-bar {display:none;}
+
+#compliance-bar,
+.mast-wrap .nav-header {
+	margin-left:2.5%;
+}
+
+@media(max-width:767px){
+	.uti,
+	.login-personal {
+		margin-right:0;
+	}
+
+	#compliance-bar,
+	.mast-wrap .nav-header {
+		margin-left:0;
+	}
+}
+
+@media(max-width:767px){
+	#compliance-bar {
+		display:none !important;
+    }
+	#mobile-compliance-bar {
+		display:flex;
+		width:100%;
+		margin-top:-10px;
+		margin-bottom: 10px;
+	}
+}
+.compliance-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    /*border-bottom: 1px #444 solid;*/
+    background: transparent;
+   padding: .5em 10px 0 0;
+     /*box-shadow:0px -3px 5px 0px inset rgba(0, 0, 0, 0.3);*/
+}
+
+.compliance-bar > svg {
+	width:100%;
+	height:auto;
+	max-width:495px;	
+}
+
+.FDIC {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height:20px;
+}
+
+@media(max-width:767px){
+	.img-fdic {
+		width:28px;
+		height:auto;
+	}
+}
+
+.text-fdic {
+    margin-left: 3px;
+    min-width: 217px;
+}
+
+.text-fdic p {
+    margin: 0;
+    text-wrap: wrap;
+    font-size: 12.8px;
+    font-family:sans-serif;
+    line-height:13px;
+    color: black;
+}
+
+@media(max-width:767px){
+	.text-fdic p {
+		font-size:9px;
+	}
+}
+
+.foot-fdic-compliance {
+	display:inline-block;
+	width:100%;
+}
+.foot-fdic-compliance > svg {
+	width:380px;
+	max-width:100%;
+	height:auto;	
+}
+
+
+/********* end FDIC Banner ************/
+
+
+.promo-img.promo-img-desktop {
+	display:block;
+}
+.promo-img.promo-img-mobile {
+		display:none;
+	}	
+@media(max-width:767px){
+	.promo-img.promo-img-desktop {
+		display:none;
+	}
+	.promo-img.promo-img-mobile {
+		display:block;
+	}	
+}
+
+/* ============================================
+   DESKTOP MEGA MENU HOVER FIX
+   ============================================ */
+
+/* Base styles for desktop nav items */
+.parentMenu.nav-item.nav-desktop {
+  position: relative;
+  display: inline-block;
+}
+
+/* Ensure nav items are properly displayed */
+.nav-content.nav-menu > li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+/* Desktop hover behavior for mega menus */
+.parentMenu.nav-item.nav-desktop:hover > .subMenuPanel.sub-menu.dropdown-menu,
+.parentMenu.nav-item.nav-desktop:focus-within > .subMenuPanel.sub-menu.dropdown-menu {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto;
+  z-index: 9999;
+}
+
+/* Mega menu panel base styles */
+.subMenuPanel.sub-menu.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  background-color: #373737;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  z-index: 9999;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+/* Ensure inner content is visible */
+.subMenuPanel.sub-menu.dropdown-menu .inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Nav columns inside mega menu */
+.nav-column {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 15px;
+}
+
+/* Nav column lists */
+.nav-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-column li {
+  margin: 5px 0;
+}
+
+/* Level one links */
+.nav-column .level-one a {
+  color: #98c2e5;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+.nav-column .level-one a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Level two links */
+.nav-column .level-two a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.nav-column .level-two a:hover {
+  color: #98c2e5;
+  text-decoration: underline;
+}
+
+/* Promo section in mega menu */
+.nav-column.nav-promo {
+  flex: 0 0 300px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 20px;
+}
+
+.nav-promo .promo-img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.nav-promo .promo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-promo .promo-text {
+  background-color: #7f7f7f;
+  padding: 15px;
+}
+
+.nav-promo .promo-text h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  text-transform: none;
+}
+
+.nav-promo .promo-text h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-promo .promo-text h3 a:hover {
+  color: #98c2e5;
+}
+
+/* Hide mega menus on mobile */
+@media (max-width: 991px) {
+  .parentMenu.nav-item.nav-desktop .subMenuPanel.sub-menu.dropdown-menu {
+    display: none !important;
+  }
+  
+  .nav-content.nav-menu > li {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Ensure desktop nav is visible on desktop */
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: flex !important;
+  }
+  
+  .nav-mobile {
+    display: none !important;
+  }
+  
+  .nav-content.nav-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mobile nav styles */
+@media (max-width: 991px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  
+  .nav-mobile {
+    display: flex !important;
+  }
+  
+  .nav-content.nav-menu {
+    display: block;
+  }
+}
+
+/* Fix for dropdown menu base styles */
+.dropdown-menu, .sub-menu {
+  background-color: #373737;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  left: 0;
+  margin: 0;
+  right: 0;
+  z-index: 9;
+  visibility: hidden;
+}
+
+.open.dropdown-menu, .open.sub-menu {
+  visibility: visible;
+}
+
+/* Ensure proper stacking context */
+.mast-wrap {
+  z-index: 1000;
+  position: relative;
+}
+
+nav {
+  position: relative;
+  z-index: 100;
+}
+
+.nav-wrap {
+  position: relative;
+  z-index: 100;
+}
+
+/* Smooth hover transition for nav links */
+.nav-content li a {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-content li:hover > a {
+  background-color: #373737;
+  color: #fff;
+}
+
+/* Fix for mobile slide menus */
+.sub-nav-wrap.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 400px;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.sub-nav-wrap.mobile-menu.show {
+  right: 0;
+}
+
+/* Back button in mobile menus */
+.back_menu_btn a {
+  display: block;
+  padding: 15px;
+  background-color: #00529b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.back_menu_btn a:hover {
+  background-color: #004582;
+}
+
+/* Mobile menu items */
+.sub-nav-content li a {
+  display: block;
+  padding: 15px;
+  color: #373737;
+  text-decoration: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sub-nav-content li a:hover {
+  background-color: #f5f5f5;
+  color: #00529b;
+}
+
+.sub-nav-content li a.sub-nav-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #373737;
+  color: #fff;
+}
+
+/* Mobile menu descriptions */
+.sub-nav-item-description {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  background-color: #f9f9f9;
+}
+
+/* =========================================
+   FIX: Main Content Not Showing
+   ========================================= */
+
+/* 1. Stop the wrapper from clipping the slider content */
+.promo-wrap {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+/* 2. Fix the height collapse on the slider container */
+.promo-main {
+    height: auto !important;
+    min-height: 80vh; /* Fallback height */
+}
+
+/* 3. Ensure the inner promo content stretches properly */
+.promo-content {
+    height: 80vh !important;
+    max-height: 80vh !important;
+    min-height: 430px !important;
+}
+
+/* =========================================
+   FIX: Slick Slider Fallback (No JS)
+   ========================================= */
+/* Because we removed the broken JS files, the slider won't auto-play. 
+   This CSS forces the slides to stack vertically so all content is visible. */
+
+.slick-track {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+    transform: none !important;
+}
+
+.slick-slide{
+display:block !important;
+opacity:1 !important;
+visibility:visible !important;
+}
+
+.slick-initialized .slick-slide {
+    display: block !important;
+}
+
+/* =========================================
+   FIX: Main Content Layout (No JS Fallback)
+   ========================================= */
+
+/* 1. Fix the Hero Slider (Overrides broken inline JS transforms) */
+.promo-main.slick-initialized .slick-track {
+    transform: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+}
+.promo-main .slick-slide {
+    display: none !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    margin: 0 !important;
+}
+.promo-main .slick-current,
+.promo-main .slick-active {
+    display: block !important;
+}
+.promo-main .promo-content {
+    height: 80vh !important;
+    max-height: 80vh !important;
+    min-height: 500px !important;
+    width: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+.promo-main .image-holder {
+    height: 100% !important;
+    width: 100% !important;
+}
+.promo-main .promo-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* 2. Fix Cross-Sell Promos (The two boxes under the slider) */
+.centerAlignTopHolder {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    margin: 3em auto !important;
+    max-width: 1200px !important;
+}
+.centerAlignTopHolder .promo-small {
+    width: 48% !important;
+    margin-bottom: 2em !important;
+    background: #f9f9f9 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    padding: 2em !important;
+    height: auto !important;
+    min-height: 250px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* 3. Fix Blog/News Articles */
+.blog-wrap {
+    margin: 3em auto !important;
+    max-width: 1200px !important;
+}
+.blog-wrap .inner-wrap {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+.blog-wrap article {
+    width: 31% !important;
+    margin-bottom: 2em !important;
+    background: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.blog-wrap article .promo-img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+.blog-wrap article span {
+    padding: 1.5em !important;
+    flex: 1 !important;
+}
+.blog-wrap article h2 {
+    font-size: 1.25em !important;
+    margin-bottom: 0.5em !important;
+    color: #00529b !important;
+}
+.blog-wrap article a.btn-arrow {
+    margin: 0 1.5em 1.5em !important;
+    align-self: flex-start !important;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PeoplesBank | Online Banking Login</title>
+<style>
+  /* Reset and Base Styles */
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* Login Card Container */
+  .login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  /* Logo Styling */
+  .logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #00529b; /* PeoplesBank Primary Blue */
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  /* Form Elements */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #373737;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #00529b;
+    box-shadow: 0 0 0 2px rgba(0, 82, 155, 0.2);
+  }
+
+  /* Button Styling */
+  .login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #00529b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .login-btn:hover {
+    background-color: #003768; /* Darker blue on hover */
+  }
+
+  /* Alert Messages */
+  .alert {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .error-msg {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+  }
+
+  .success-msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <!-- Logo -->
+  <img src="/static/image/logo.png" alt="PeoplesBank Logo" class="logo">
+  
+  <h2>Online Banking Login</h2>
+  
+  <!-- Alert Messages -->
+  <div id="errorMsg" class="alert error-msg">Invalid username or password. Please try again.</div>
+  <div id="successMsg" class="alert success-msg">Login successful! Redirecting to your dashboard...</div>
+
+  <!-- Login Form -->
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit" class="login-btn">Log In</button>
+  </form>
+</div>
+
+<script>
+  // ==========================================
+  // SET YOUR HARDCODED CREDENTIALS HERE
+  // ==========================================
+  const validUsername = "jamesJr12";
+  const validPassword = "password123#ssbgdhdkdudg";
+
+  // Grab DOM elements
+  const loginForm = document.getElementById('loginForm');
+  const errorMsg = document.getElementById('errorMsg');
+  const successMsg = document.getElementById('successMsg');
+
+  // Handle Form Submission
+  loginForm.addEventListener('submit', function(event) {
+    // Prevent the page from refreshing
+    event.preventDefault();
+
+    // Get user input and remove extra spaces
+    const userInput = document.getElementById('username').value.trim();
+    const passInput = document.getElementById('password').value.trim();
+
+    // Hide any previous messages
+    errorMsg.style.display = 'none';
+    successMsg.style.display = 'none';
+
+    // Check if credentials match
+    if (userInput === validUsername && passInput === validPassword) {
+      // SUCCESS: Credentials match, let them through
+      successMsg.style.display = 'block';
+      
+      // Simulate a redirect after 1.5 seconds
+      setTimeout(() => {
+        // Uncomment the line below to actually redirect to another page
+        window.location.href = '/dashboard'; 
+        alert('Welcome to PeoplesBank! (Redirect logic goes here)');
+      }, 1500);
+
+    } else {
+      // FAILURE: Credentials do NOT match, block them
+      errorMsg.style.display = 'block';
+      
+      // Clear the password field for security
+      document.getElementById('password').value = '';
+    }
+  });
+</script>
+
+</body>
+</html>

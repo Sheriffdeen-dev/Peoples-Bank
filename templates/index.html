@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PeoplesBank | Personal Banking, Business Banking, Home Loans</title>
+<meta name="description" content="Local banking made simple. PeoplesBank offers personal &amp; business accounts, loans &amp; financial services in Western MA &amp; Northern CT.">
+
+<link rel="stylesheet" href="/static/css/main_promo_themes.css">
+<link rel="stylesheet" href="/static/css/slick.css">
+<link rel="stylesheet" href="/static/css/flexslider.css">
+<link rel="stylesheet" href="/static/css/fi_styles.css">
+<link rel="stylesheet" href="/static/css/_styles.css">
+<link rel="stylesheet" href="/static/css/build.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+<style>
+/* =========================================
+   1. FIX FONT AWESOME 404 ERRORS
+   Overrides the local ../fonts/ paths in your CSS 
+   and forces the browser to use the CDN instead.
+   ========================================= */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+/* =========================================
+   2. FIX MAIN CONTENT NOT SHOWING
+   Forces the promo/slider area to have a height 
+   since the Slick JS is missing and height: 100% 
+   was collapsing to 0px.
+   ========================================= */
+.promo-wrap {
+    height: auto !important;
+    min-height: 80vh !important;
+    overflow: visible !important;
+}
+.promo-main {
+    height: auto !important;
+    min-height: 80vh !important;
+    display: block !important;
+}
+.promo-main .promo-content {
+    display: block !important;
+    height: 80vh !important;
+    min-height: 500px !important;
+    width: 100% !important;
+}
+
+/* Force only the first active slide to show since JS isn't cycling them */
+.promo-main .slick-slide {
+    display: none !important;
+}
+.promo-main .slick-current,
+.promo-main .slick-active {
+    display: block !important;
+}
+</style>
+</head>
+
+<body id="home" class="non_ie">
+<div class="mast-wrap">
+<section class="inner-wrap nav" aria-label="navigation">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mobile-menu" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar top-icon-bar"></span>
+<span class="icon-bar middle-icon-bar"></span>
+<span class="icon-bar bottom-icon-bar"></span>
+</button>
+<div class="search-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="uti">
+<li class="search">
+<span class="search-menu">
+<form class="form" role="search" method="get" action="https://www.bankatpeoples.com/home/site/search" id="SearchOne" name="Search">
+<label class="sr-only" for="search-fieldOne" id="lblSearchOne">Enter search criteria</label>
+<input id="search-fieldOne" class="form-control" name="q" type="text" aria-labelledby="lblSearchOne" placeholder="Enter search criteria">
+<label for="searchSubOne" id="lblSearchsubOne" class="sr-only">Submit</label>
+<input type="submit" name="submit" id="searchSubOne" value="submit" class="sr-only" aria-labelledby="lblSearchsubOne" placeholder="Submit">
+</form>
+</span>
+<a href="#" class="expand-toggle" data-target=".search-menu" rel=" noopener noreferrer"><span class="fa fa-search"></span></a>
+</li>
+</ul>
+</div>
+<div class="uti-wrap mobile-menu">
+<section id="compliance-bar" aria-label="compliance-bar">
+<div class="compliance-bar">
+<svg id="fdic-hed-img" data-name="fdic-hed-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390 16" role="img" aria-labelledby="fdic-img-title" focasable="false">
+<title id="mobile-fdic-img-title">FDIC: FDIC-Insured - Backed by the full faith and credit of the U.S. Government</title>
+<defs><style>#fdic-hed-img .cls-1 { fill: #003256; } #fdic-hed-img .cls-2, #fdic-hed-img .cls-3 { fill: none; } #fdic-hed-img .cls-3 { clip-path: url(#clippath); } #fdic-hed-img .cls-4 { fill: #231f20; }</style><clipPath id="clippath"><rect class="cls-2" x=".42" y=".06" width="389.15" height="15.89"></rect></clipPath></defs>
+<g class="cls-3"><path class="cls-1" d="m34.92,3.86c1.3,0,2.55.58,3.32,1.66V.82c-1.12-.48-2.24-.76-3.46-.76-2.05,0-4.11.92-5.54,2.44-1.39,1.48-2.14,3.46-2.14,5.52,0,2.24.74,4.2,2.34,5.7,1.51,1.42,3.44,2.22,5.47,2.22,1.18,0,2.08-.3,3.34-.7v-4.7c-.79.98-2.03,1.6-3.26,1.6-2.36,0-3.94-1.72-3.94-4.1s1.56-4.18,3.88-4.18m-12.12,11.69h3.78V.46h-3.78v15.09Zm-8.67-3.32h-.85V3.78h.89c2.44,0,4.15,1.52,4.15,4.22,0,2.94-1.93,4.22-4.19,4.22M14.86.46h-5.37v15.09h5.37c4.04,0,7.4-3.3,7.4-7.54S18.92.46,14.86.46M.42,15.54h3.78v-5.92h4.15v-3.32h-4.15v-2.52h4.58V.46H.42v15.09Z"></path><path class="cls-4" d="m387.76,11.08c.43,0,.8-.14,1.05-.25l-.19-.63c-.17.08-.37.17-.58.17-.53,0-.71-.23-.71-.69,0-.15.01-.27.03-.41l.65-3.18h1.43l.14-.71h-1.41l.31-1.53h-.74l-.41,1.53-.87.06-.13.65h.81l-.65,3.13c-.02.21-.06.39-.06.62,0,.69.35,1.23,1.33,1.23"></path></g>
+</svg>
+</div>
+</section>
+<ul class="uti">
+<li></li>
+<li><a href="/home/locations-hours" rel=" noopener noreferrer">Locations/Hours</a></li>
+<li><a href="/home/contact-us" rel=" noopener noreferrer">Contact Us</a></li>
+<li><a href="/home/misc/about" rel=" noopener noreferrer">About</a></li>
+<li><a href="/home/misc/careers" rel=" noopener noreferrer">Careers</a></li>
+<li><a href="/home/community" rel=" noopener noreferrer">Community</a></li>
+<li class="search reorder">
+<span class="search-menu">
+<form class="form" role="search" method="get" action="https://www.bankatpeoples.com/home/site/search" id="Search" name="Search">
+<label class="sr-only" for="search-field" id="lblSearch">Enter search criteria</label>
+<input id="search-field" class="form-control" name="q" type="text" aria-labelledby="lblSearch" placeholder="Enter search criteria">
+<label for="searchSub" id="lblSearchsub" class="sr-only">Submit</label>
+<input type="submit" name="submit" id="searchSub" value="submit" class="sr-only" aria-labelledby="lblSearchsub" placeholder="Submit">
+</form>
+</span>
+<a href="#" class="expand-toggle" data-target=".search-menu" rel=" noopener noreferrer"><span class="fa fa-search"></span></a>
+</li>
+</ul>
+</div>
+<div class="nav-header  ">
+<div class="logo">
+<a href="/home/" id="logoLink" rel=" noopener noreferrer">
+<img src="/static/image/logo.png" alt="PeoplesBank">
+</a>
+</div>
+</div>
+<nav>
+<div class="nav-wrap mobile-menu" id="megaMe" role="navigation">
+<ul class="nav-content nav-menu">
+<li class="nav-mobile slide_menu nav-desktop" data-target="#slide-menu-personal">
+<a href="javascript:void(0);" class="mobile-primary sub-nav" aria-label="mobile menu link to Personal" rel=" noopener noreferrer">Personal <span class="fa fa-angle-right"></span></a>
+</li>
+<li class="parentMenu nav-item nav-desktop" id="personal">
+<a href="/home/personal" aria-label="navigation link to Personal" rel=" noopener noreferrer">Personal</a>
+<div class="subMenuPanel sub-menu dropdown-menu sub-nav" id="menu_personal" style="background-color: #373737" role="region">
+<div class="inner"><div class="inner">
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/personal/bank" class="not-a-link">Bank</a></li>
+<li class="level-two"><a href="/home/personal/bank/checking">Checking</a></li>
+<li class="level-two"><a href="/home/personal/bank/savings">Savings</a></li>
+<li class="level-two"><a href="/home/personal/bank/online-mobile-banking">Online &amp; Mobile Banking</a></li>
+<li class="level-two"><a href="/home/personal/bank/mobile-payments">Mobile Payments</a></li>
+<li class="level-two"><a href="/home/personal/bank/peoplesbank-at-work">PeoplesBank-at-Work</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/business" class="not-a-link">Borrow</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage">Mortgage Overview</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage-options">Mortgage Options</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage-rates">Mortgage Rates</a></li>
+<li class="level-two"><a href="/home/personal/borrow/howtoapply">How to Apply</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage-consultant">Mortgage Loan Officers</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage-assistance-programs">Mortgage Assistance Program</a></li>
+<li class="level-two"><a href="/home/personal/borrow/home-equity">Home Equity Options</a></li>
+<li class="level-two"><a href="/home/personal/borrow/home-equity-rates">Home Equity Rates</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/personal" class="not-a-link">Resources</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/">Financial Resource Center</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/financial-calculators">Financial Calculators</a></li>
+<li class="level-two"><a href="/home/personal/resources/refer-a-friend">Refer A Friend</a></li>
+<li class="level-two"><a href="/home/personal/resources/additional-resources">Additional Resources</a></li>
+</ul></div>
+</div>
+<div class="nav-column nav-promo">
+<div class="promo-img"><img alt="Mobile Payments" src="/static/image/img_menu_personal01.jpg" style="height: 100%; object-fit: cover; object-position: left top; width: 100%;"></div>
+<div class="promo-text"><h3><a class="btn-arrow" href="/home/personal/bank/mobile-payments" rel=" noopener noreferrer">Turn your phone into your wallet. Learn more about Mobile Payments</a></h3></div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-mobile slide_menu nav-desktop" data-target="#slide-menu-business">
+<a href="javascript:void(0);" class="mobile-primary sub-nav" aria-label="mobile menu link to Business" rel=" noopener noreferrer">Business <span class="fa fa-angle-right"></span></a>
+</li>
+<li class="parentMenu nav-item nav-desktop" id="business">
+<a href="/home/business" aria-label="navigation link to Business" rel=" noopener noreferrer">Business</a>
+<div class="subMenuPanel sub-menu dropdown-menu sub-nav" id="menu_business" style="background-color: #373737" role="region">
+<div class="inner"><div class="inner">
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/business/bank" class="not-a-link">Bank</a></li>
+<li class="level-two"><a href="/home/business/bank/business-checking">Business Checking</a></li>
+<li class="level-two"><a href="/home/business/bank/business-savings-cds">Business Savings &amp; CDs</a></li>
+<li class="level-two"><a href="/home/business/bank/business-online-banking">Business Online Banking</a></li>
+<li class="level-two"><a href="/home/business/bank/business-mobile-banking">Business Mobile Banking</a></li>
+<li class="level-two"><a href="/home/business/bank/payroll-services">Payroll Solutions</a></li>
+<li class="level-two"><a href="/home/business/bank/merchant-services">Merchant Services</a></li>
+<li class="level-two"><a href="/home/business/bank/business-bank-cards">Business Bank Cards</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/business" class="not-a-link">Borrow</a></li>
+<li class="level-two"><a href="/home/business/borrow/business-lending">Business Lending</a></li>
+<li class="level-two"><a href="/home/business/borrow/commercial-lending">Commercial Lending</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/business/cash-management/cash-management-overview" class="not-a-link">Cash Management</a></li>
+<li class="level-two"><a href="/home/business/cash-management/cash-management-overview">Cash Management Overview</a></li>
+<li class="level-two"><a href="/home/business/cash-management/deposit-solutions">Business Deposit Solutions</a></li>
+<li class="level-two"><a href="/home/business/cash-management/institutional-solutions">Institutional Deposit Solutions</a></li>
+<li class="level-two"><a href="/home/business/cash-management/payment-solutions">Payment Solutions</a></li>
+<li class="level-two"><a href="/home/business/cash-management/funds-management-solutions">Funds Management Solutions</a></li>
+<li class="level-two"><a href="/home/business/cash-management/fraud-prevention">Fraud Prevention</a></li>
+<li class="level-two"><a href="/home/business/cash-management/online-mobile">Cash Management Online &amp; Mobile</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/business" class="not-a-link">Resources</a></li>
+<li class="level-two"><a href="/home/business/resources/peoplesbank-difference">The PeoplesBank Difference</a></li>
+<li class="level-two"><a href="/home/business/resources/commercial-banking-officers">Commercial Banking Officers</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/">Financial Resource Center</a></li>
+<li class="level-two"><a href="/home/business/resources/peoplesbank-at-work">PeoplesBank-at-Work</a></li>
+<li class="level-two"><a href="/home/business/resources/seminars">Business Seminars</a></li>
+<li class="level-two"><a href="/home/business/resources/beneficial-ownership">Beneficial Ownership Requirements</a></li>
+</ul></div>
+</div>
+<div class="nav-column nav-promo">
+<div class="promo-img"><img alt="Business Savings" src="/static/image/img_menu_business01.jpg" style="height: 100%; object-fit: cover; object-position: left top; width: 100%;"></div>
+<div class="promo-text"><h3><a class="btn-arrow" href="/home/business/bank/business-savings-cds" rel=" noopener noreferrer">Earn more with Business Premium Savings. Learn More</a></h3></div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-mobile slide_menu nav-desktop" data-target="#slide-menu-wealth-management">
+<a href="javascript:void(0);" class="mobile-primary sub-nav" aria-label="mobile menu link to Wealth Management" rel=" noopener noreferrer">Wealth Management <span class="fa fa-angle-right"></span></a>
+</li>
+<li class="parentMenu nav-item nav-desktop" id="wealth-management">
+<a href="#" aria-label="navigation link to Wealth Management" class="nav-desktop-link" rel=" noopener noreferrer">Wealth Management</a>
+<div class="subMenuPanel sub-menu dropdown-menu sub-nav" id="menu_wealth-management" style="background-color: #373737" role="region">
+<div class="inner"><div class="inner">
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="" class="not-a-link">PeoplesWealth</a></li>
+<li class="level-one-description">PeoplesWealth advisors provide investment, insurance and retirement services to help you achieve your financial goals.</li>
+<li class="level-two"><a href="/home/wealth-management">PeoplesWealth Home</a></li>
+<li class="level-two"><a href="/home/wealth-management/overview/about-advisory-group">About PeoplesWealth</a></li>
+<li class="level-two"><a href="/home/wealth-management/overview/advisors">Meet the Team</a></li>
+<li class="level-two"><a href="/home/wealth-management/wealth-management">Personal Financial Planning</a></li>
+<li class="level-two"><a href="/home/wealth-management/resources/resource-center">Resource Center</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="" class="not-a-link">Private Client Group</a></li>
+<li class="level-one-description">Our Private Client Group offers qualifying customers the highest level of service and premium banking products.</li>
+<li class="level-two"><a href="/home/wealth-management/private-banking">About the Private Client Group</a></li>
+<li class="level-two"><a href="/home/wealth-management/private-banking#products">Products &amp; Services</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/financial-calculators">Financial Calculators</a></li>
+</ul></div>
+</div>
+<div class="nav-column nav-promo">
+<div class="promo-img"><img alt="Wealth Management" src="/static/image/img_menu_wealth01.jpg" style="height: 100%; object-fit: cover; object-position: left top; width: 100%;"></div>
+<div class="promo-text"><h3><a class="btn-arrow" href="/home/wealth-management/wealth-management/retirement-planning" rel=" noopener noreferrer">Start planning for retirement today</a></h3></div>
+</div>
+</div>
+</div>
+</li>
+<li class="nav-mobile slide_menu nav-desktop" data-target="#slide-menu-open-an-account">
+<a href="javascript:void(0);" class="mobile-primary sub-nav" aria-label="mobile menu link to Open An Account" rel=" noopener noreferrer">Open An Account <span class="fa fa-angle-right"></span></a>
+</li>
+<li class="parentMenu nav-item nav-desktop" id="open-an-account">
+<a href="#" aria-label="navigation link to Open An Account" class="nav-desktop-link" rel=" noopener noreferrer">Open An Account</a>
+<div class="subMenuPanel sub-menu dropdown-menu sub-nav" id="menu_open-an-account" style="background-color: #373737" role="region">
+<div class="inner"><div class="inner">
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/personal/bank/checking" class="not-a-link">Bank</a></li>
+<li class="level-two"><a href="/home/personal/bank/checking">Personal Checking</a></li>
+<li class="level-two"><a href="/home/personal/bank/savings">Personal Savings</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/personal/borrow/mortgage" class="not-a-link">Borrow</a></li>
+<li class="level-two"><a href="https://bankatpeoples.mymortgage-online.com/?loanapp&amp;siteid=4865385962&amp;workFlowId=106909" rel=" noopener noreferrer">Get Pre-Approved for a Mortgage</a></li>
+<li class="level-two"><a href="https://bankatpeoples.mymortgage-online.com/ApplyNow.html" rel=" noopener noreferrer">Apply for a Mortgage</a></li>
+<li class="level-two"><a href="https://bankatpeoples.mymortgage-online.com/ApplyNow.html" rel=" noopener noreferrer">Apply for a Home Equity</a></li>
+</ul></div>
+<div class="nav-column sub-nav-group"><ul>
+<li class="level-one"><a href="/home/personal/bank/checking" class="not-a-link">Resources</a></li>
+<li class="level-two"><a href="/home/personal/bank/checking/compare-personal-checking">Compare Checking Accounts</a></li>
+<li class="level-two"><a href="/home/personal/bank/savings/compare-personal-savings">Compare Savings Accounts</a></li>
+<li class="level-two"><a href="/home/personal/borrow/mortgage-options">Mortgage Options</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/">Financial Resource Center</a></li>
+<li class="level-two"><a href="https://financialtips.bankatpeoples.com/financial-calculators">Financial Calculators</a></li>
+</ul></div>
+</div>
+<div class="nav-column nav-promo">
+<div class="promo-img"><img alt="Mortgage Options" src="/static/image/img_menu_openaccount01.jpg" style="height: 100%; object-fit: cover; object-position: left top; width: 100%;"></div>
+<div class="promo-text"><h3><a class="btn-arrow" href="/home/personal/borrow/mortgage-options" rel=" noopener noreferrer">Ready for the big move? Check out our Mortgage Options</a></h3></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<section id="mobile-compliance-bar" aria-label="Mobile FDIC Compliance Bar">
+<div class="compliance-bar">
+<svg id="mobile-fdic-hed-img" data-name="mobile-fdic-hed-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390 16" role="img" aria-labelledby="fdic-img-title" focasable="false">
+<title id="mobile-fdic-img-title">FDIC: FDIC-Insured - Backed by the full faith and credit of the U.S. Government</title>
+<defs><style>#mobile-fdic-hed-img .cls-1 { fill: #003256; } #mobile-fdic-hed-img .cls-2, #mobile-fdic-hed-img .cls-3 { fill: none; } #mobile-fdic-hed-img .cls-3 { clip-path: url(#clippath); } #mobile-fdic-hed-img .cls-4 { fill: #231f20; }</style><clipPath id="clippath"><rect class="cls-2" x=".42" y=".06" width="389.15" height="15.89"></rect></clipPath></defs>
+<g class="cls-3"><path class="cls-1" d="m34.92,3.86c1.3,0,2.55.58,3.32,1.66V.82c-1.12-.48-2.24-.76-3.46-.76-2.05,0-4.11.92-5.54,2.44-1.39,1.48-2.14,3.46-2.14,5.52,0,2.24.74,4.2,2.34,5.7,1.51,1.42,3.44,2.22,5.47,2.22,1.18,0,2.08-.3,3.34-.7v-4.7c-.79.98-2.03,1.6-3.26,1.6-2.36,0-3.94-1.72-3.94-4.1s1.56-4.18,3.88-4.18m-12.12,11.69h3.78V.46h-3.78v15.09Zm-8.67-3.32h-.85V3.78h.89c2.44,0,4.15,1.52,4.15,4.22,0,2.94-1.93,4.22-4.19,4.22M14.86.46h-5.37v15.09h5.37c4.04,0,7.4-3.3,7.4-7.54S18.92.46,14.86.46M.42,15.54h3.78v-5.92h4.15v-3.32h-4.15v-2.52h4.58V.46H.42v15.09Z"></path><path class="cls-4" d="m387.76,11.08c.43,0,.8-.14,1.05-.25l-.19-.63c-.17.08-.37.17-.58.17-.53,0-.71-.23-.71-.69,0-.15.01-.27.03-.41l.65-3.18h1.43l.14-.71h-1.41l.31-1.53h-.74l-.41,1.53-.87.06-.13.65h.81l-.65,3.13c-.02.21-.06.39-.06.62,0,.69.35,1.23,1.33,1.23"></path></g>
+</svg>
+</div>
+</section>
+<div class="active login-personal">
+<a href="javascript:void(0);" class="btn login-toggle" data-target="#login" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="login" id="login-toggle-btn" aria-label="internet banking log in" rel=" noopener noreferrer">Online Access</a>
+<a href="javascript:void(0)" class="btn login-personal-apply" data-target="#drop_applyonline" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="drop_applyonline" rel=" noopener noreferrer">Apply/Open Online</a>
+</div>
+</section>
+
+<!-- MOBILE MENUS -->
+<div id="slide-menu-personal" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl mobile-secondary-div">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-personal"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Main Menu</a></li>
+<li><a href="/home/personal" class="sub-nav-title" rel=" noopener noreferrer">Personal</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-personal-bank" rel=" noopener noreferrer">Bank</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-personal-borrow" rel=" noopener noreferrer">Borrow</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-personal-resources" rel=" noopener noreferrer">Resources</a></li>
+</ul>
+</div>
+<div id="slide-menu-business" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl mobile-secondary-div">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-business"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Main Menu</a></li>
+<li><a href="/home/business" class="sub-nav-title" rel=" noopener noreferrer">Business</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-business-bank" rel=" noopener noreferrer">Bank</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-business-borrow" rel=" noopener noreferrer">Borrow</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-business-cash-management" rel=" noopener noreferrer">Cash Management</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-business-resources" rel=" noopener noreferrer">Resources</a></li>
+</ul>
+</div>
+<div id="slide-menu-wealth-management" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl mobile-secondary-div">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-wealth-management"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Main Menu</a></li>
+<li><a href="javascript:void(0)" class="sub-nav-title" rel=" noopener noreferrer">Wealth Management</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary no-pad" data-target="#slide-menu-wealth-management-peopleswealth" rel=" noopener noreferrer">PeoplesWealth</a><span class="sub-nav-item-description">PeoplesWealth advisors provide investment, insurance and retirement services to help you achieve your financial goals.</span></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary no-pad" data-target="#slide-menu-wealth-management-private-banking" rel=" noopener noreferrer">Private Client Group</a><span class="sub-nav-item-description">Our Private Client Group offers qualifying customers the highest level of service and premium banking products.</span></li>
+</ul>
+</div>
+<div id="slide-menu-open-an-account" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl mobile-secondary-div">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-open-an-account"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Main Menu</a></li>
+<li><a href="/home/personal/bank/checking" class="sub-nav-title" rel=" noopener noreferrer">Open An Account</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-open-an-account-bank" rel=" noopener noreferrer">Bank</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-open-an-account-borrow" rel=" noopener noreferrer">Borrow</a></li>
+<li class="mobile-secondary-li"><a href="#" class="sub-nav-item slide_menu mobile-secondary" data-target="#slide-menu-open-an-account-resources" rel=" noopener noreferrer">Resources</a></li>
+</ul>
+</div>
+
+<!-- RESTORED MOBILE SUBLISTS -->
+<div id="slide-menu-personal-bank" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-personal-bank"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Personal</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Bank</a></li>
+<li><a href="/home/personal/bank/checking" class="sub-nav-item" rel=" noopener noreferrer">Checking</a></li>
+<li><a href="/home/personal/bank/savings" class="sub-nav-item" rel=" noopener noreferrer">Savings</a></li>
+<li><a href="/home/personal/bank/online-mobile-banking" class="sub-nav-item" rel=" noopener noreferrer">Online &amp; Mobile Banking</a></li>
+<li><a href="/home/personal/bank/mobile-payments" class="sub-nav-item" rel=" noopener noreferrer">Mobile Payments</a></li>
+<li><a href="/home/personal/bank/peoplesbank-at-work" class="sub-nav-item" rel=" noopener noreferrer">PeoplesBank-at-Work</a></li>
+</ul>
+</div>
+<div id="slide-menu-personal-borrow" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-personal-borrow"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Personal</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Borrow</a></li>
+<li><a href="/home/personal/borrow/mortgage" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Overview</a></li>
+<li><a href="/home/personal/borrow/mortgage-options" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Options</a></li>
+<li><a href="/home/personal/borrow/mortgage-rates" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Rates</a></li>
+<li><a href="/home/personal/borrow/howtoapply" class="sub-nav-item" rel=" noopener noreferrer">How to Apply</a></li>
+<li><a href="/home/personal/borrow/mortgage-consultant" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Loan Officers</a></li>
+<li><a href="/home/personal/borrow/mortgage-assistance-programs" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Assistance Program</a></li>
+<li><a href="/home/personal/borrow/home-equity" class="sub-nav-item" rel=" noopener noreferrer">Home Equity Options</a></li>
+<li><a href="/home/personal/borrow/home-equity-rates" class="sub-nav-item" rel=" noopener noreferrer">Home Equity Rates</a></li>
+</ul>
+</div>
+<div id="slide-menu-personal-resources" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-personal-resources"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Personal</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Resources</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/" class="sub-nav-item" rel=" noopener noreferrer">Financial Resource Center</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/financial-calculators" class="sub-nav-item" rel=" noopener noreferrer">Financial Calculators</a></li>
+<li><a href="/home/personal/resources/refer-a-friend" class="sub-nav-item" rel=" noopener noreferrer">Refer A Friend</a></li>
+<li><a href="/home/personal/resources/additional-resources" class="sub-nav-item" rel=" noopener noreferrer">Additional Resources</a></li>
+</ul>
+</div>
+<div id="slide-menu-business-bank" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-business-bank"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Business</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Bank</a></li>
+<li><a href="/home/business/bank/business-checking" class="sub-nav-item" rel=" noopener noreferrer">Business Checking</a></li>
+<li><a href="/home/business/bank/business-savings-cds" class="sub-nav-item" rel=" noopener noreferrer">Business Savings &amp; CDs</a></li>
+<li><a href="/home/business/bank/business-online-banking" class="sub-nav-item" rel=" noopener noreferrer">Business Online Banking</a></li>
+<li><a href="/home/business/bank/business-mobile-banking" class="sub-nav-item" rel=" noopener noreferrer">Business Mobile Banking</a></li>
+<li><a href="/home/business/bank/payroll-services" class="sub-nav-item" rel=" noopener noreferrer">Payroll Solutions</a></li>
+<li><a href="/home/business/bank/merchant-services" class="sub-nav-item" rel=" noopener noreferrer">Merchant Services</a></li>
+<li><a href="/home/business/bank/business-bank-cards" class="sub-nav-item" rel=" noopener noreferrer">Business Bank Cards</a></li>
+</ul>
+</div>
+<div id="slide-menu-business-borrow" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-business-borrow"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Business</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Borrow</a></li>
+<li><a href="/home/business/borrow/business-lending" class="sub-nav-item" rel=" noopener noreferrer">Business Lending</a></li>
+<li><a href="/home/business/borrow/commercial-lending" class="sub-nav-item" rel=" noopener noreferrer">Commercial Lending</a></li>
+</ul>
+</div>
+<div id="slide-menu-business-cash-management" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-business-cash-management"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Business</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Cash Management</a></li>
+<li><a href="/home/business/cash-management/cash-management-overview" class="sub-nav-item" rel=" noopener noreferrer">Cash Management Overview</a></li>
+<li><a href="/home/business/cash-management/deposit-solutions" class="sub-nav-item" rel=" noopener noreferrer">Business Deposit Solutions</a></li>
+<li><a href="/home/business/cash-management/institutional-solutions" class="sub-nav-item" rel=" noopener noreferrer">Institutional Deposit Solutions</a></li>
+<li><a href="/home/business/cash-management/payment-solutions" class="sub-nav-item" rel=" noopener noreferrer">Payment Solutions</a></li>
+<li><a href="/home/business/cash-management/funds-management-solutions" class="sub-nav-item" rel=" noopener noreferrer">Funds Management Solutions</a></li>
+<li><a href="/home/business/cash-management/fraud-prevention" class="sub-nav-item" rel=" noopener noreferrer">Fraud Prevention</a></li>
+<li><a href="/home/business/cash-management/online-mobile" class="sub-nav-item" rel=" noopener noreferrer">Cash Management Online &amp; Mobile</a></li>
+</ul>
+</div>
+<div id="slide-menu-business-resources" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-business-resources"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Business</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Resources</a></li>
+<li><a href="/home/business/resources/peoplesbank-difference" class="sub-nav-item" rel=" noopener noreferrer">The PeoplesBank Difference</a></li>
+<li><a href="/home/business/resources/commercial-banking-officers" class="sub-nav-item" rel=" noopener noreferrer">Commercial Banking Officers</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/" class="sub-nav-item" rel=" noopener noreferrer">Financial Resource Center</a></li>
+<li><a href="/home/business/resources/peoplesbank-at-work" class="sub-nav-item" rel=" noopener noreferrer">PeoplesBank-at-Work</a></li>
+<li><a href="/home/business/resources/seminars" class="sub-nav-item" rel=" noopener noreferrer">Business Seminars</a></li>
+<li><a href="/home/business/resources/beneficial-ownership" class="sub-nav-item" rel=" noopener noreferrer">Beneficial Ownership Requirements</a></li>
+</ul>
+</div>
+<div id="slide-menu-wealth-management-peopleswealth" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-wealth-management-peopleswealth"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Wealth Management</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">PeoplesWealth</a></li>
+<li><a href="/home/wealth-management" class="sub-nav-item" rel=" noopener noreferrer">PeoplesWealth Home</a></li>
+<li><a href="/home/wealth-management/overview/about-advisory-group" class="sub-nav-item" rel=" noopener noreferrer">About PeoplesWealth</a></li>
+<li><a href="/home/wealth-management/overview/advisors" class="sub-nav-item" rel=" noopener noreferrer">Meet the Team</a></li>
+<li><a href="/home/wealth-management/wealth-management" class="sub-nav-item" rel=" noopener noreferrer">Personal Financial Planning</a></li>
+<li><a href="/home/wealth-management/resources/resource-center" class="sub-nav-item" rel=" noopener noreferrer">Resource Center</a></li>
+</ul>
+</div>
+<div id="slide-menu-wealth-management-private-banking" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-wealth-management-private-banking"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Wealth Management</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Private Client Group</a></li>
+<li><a href="/home/wealth-management/private-banking" class="sub-nav-item" rel=" noopener noreferrer">About the Private Client Group</a></li>
+<li><a href="/home/wealth-management/private-banking#products" class="sub-nav-item" rel=" noopener noreferrer">Products &amp; Services</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/financial-calculators" class="sub-nav-item" rel=" noopener noreferrer">Financial Calculators</a></li>
+</ul>
+</div>
+<div id="slide-menu-open-an-account-bank" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-open-an-account-bank"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Open An Account</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Bank</a></li>
+<li><a href="/home/personal/bank/checking" class="sub-nav-item" rel=" noopener noreferrer">Personal Checking</a></li>
+<li><a href="/home/personal/bank/savings" class="sub-nav-item" rel=" noopener noreferrer">Personal Savings</a></li>
+</ul>
+</div>
+<div id="slide-menu-open-an-account-borrow" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-open-an-account-borrow"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Open An Account</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Borrow</a></li>
+<li><a href="https://bankatpeoples.mymortgage-online.com/?loanapp&amp;siteid=4865385962&amp;workFlowId=106909" class="sub-nav-item" rel=" noopener noreferrer">Get Pre-Approved for a Mortgage</a></li>
+<li><a href="https://bankatpeoples.mymortgage-online.com/ApplyNow.html" class="sub-nav-item" rel=" noopener noreferrer">Apply for a Mortgage</a></li>
+<li><a href="https://bankatpeoples.mymortgage-online.com/ApplyNow.html" class="sub-nav-item" rel=" noopener noreferrer">Apply for a Home Equity</a></li>
+</ul>
+</div>
+<div id="slide-menu-open-an-account-resources" class="sub-nav-wrap mobile-menu hidden-md hidden-lg hidden-xl">
+<ul class="sub-nav-content">
+<li class="back_menu_btn back-to-main-li" data-target="#slide-menu-open-an-account-resources"><a href="javascript:void(0)" class="back-to-main" rel=" noopener noreferrer"><span class="fa fa-angle-left"></span> Back to Open An Account</a></li>
+<li><a href="#" class="sub-nav-title" rel=" noopener noreferrer">Resources</a></li>
+<li><a href="/home/personal/bank/checking/compare-personal-checking" class="sub-nav-item" rel=" noopener noreferrer">Compare Checking Accounts</a></li>
+<li><a href="/home/personal/bank/savings/compare-personal-savings" class="sub-nav-item" rel=" noopener noreferrer">Compare Savings Accounts</a></li>
+<li><a href="/home/personal/borrow/mortgage-options" class="sub-nav-item" rel=" noopener noreferrer">Mortgage Options</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/" class="sub-nav-item" rel=" noopener noreferrer">Financial Resource Center</a></li>
+<li><a href="https://financialtips.bankatpeoples.com/financial-calculators" class="sub-nav-item" rel=" noopener noreferrer">Financial Calculators</a></li>
+</ul>
+</div>
+
+<div class="login-wrap collapse " id="login">
+<div class="login-menu">
+<div class="login-ob">
+<h2>Personal &amp; Business Banking</h2>
+<div class="inner-wrap-2">
+<span class="login-links">
+<a href="https://olb.bankatpeoples.com/login/enroll/customer-information" rel=" noopener noreferrer">Enroll</a>
+<a href="https://olb.bankatpeoples.com/login/restoreaccess/forgot-password" rel=" noopener noreferrer">Forgot Password</a>
+</span>
+<a href="https://olb.bankatpeoples.com/login" rel="noopener noreferrer noopener noreferrer" class="btn-ob-login">Log In</a>
+</div>
+<div class="ob-business">
+<h2>Cash Management</h2>
+<a href="https://onlinecm.bankatpeoples.com/PeoplesBankOnline_40/uux.aspx" class="btn-ob-login" aria-label="cash management log in" rel=" noopener noreferrer">Log In</a>
+</div>
+</div>
+</div>
+</div>
+<div class="apply-online-wrap collapse" id="drop_applyonline">
+<div class="apply-online-body">
+<div class="apply-feature">
+<div class="apply-feature-icon"><span><img src="/static/image/icon_blue_checking.png" alt="icon blue checking" role="presentation"></span></div>
+<div class="apply-feature-title"><h2>Personal Checking &amp; Savings</h2></div>
+<div class="apply-feature-button"><a href="https://onboard.bankatpeoples.com/#/intake/object/rao?field%5Bstep%5D=1&amp;field%5Breferral%5D=RAO" class="btn" rel=" noopener noreferrer">Open Online</a></div>
+<div class="apply-feature-rates"><a href="/home/personal/bank/savings/personal-rates" rel=" noopener noreferrer">View Rates</a></div>
+</div>
+<div class="apply-feature">
+<div class="apply-feature-icon"><span><img src="/static/image/icon_blue_mortgage.png" alt="icon blue mortgage" role="presentation"></span></div>
+<div class="apply-feature-title"><h2>Mortgage &amp; Home Equity Loans</h2></div>
+<div class="apply-feature-button"><a href="https://bankatpeoples.mymortgage-online.com/ApplyNow.html" class="btn" rel=" noopener noreferrer">Apply Online</a></div>
+<div class="apply-feature-rates"><a href="/home/personal/borrow/mortgage-rates" rel=" noopener noreferrer">View Rates</a></div>
+</div>
+<div class="apply-feature">
+<div class="apply-feature-icon"><span><img src="/static/image/icon_blue_savings.png" alt="icon blue savings" role="presentation"></span></div>
+<div class="apply-feature-title"><h2>Business Loans</h2></div>
+<div class="apply-feature-button"><a href="https://www.bankatpeoples.com/home/business/borrow/business-lending" class="btn" rel=" noopener noreferrer">Apply Online</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- =========================================
+     FULLY RESTORED MAIN CONTENT AREA
+     ========================================= -->
+<main class="container-fluid">
+<div class="scroll-up">
+<span class="fa fa-arrow-circle-up"></span>
+</div>
+<section class="inner" aria-label="main promotional area">
+<div class="promo-wrap">
+<div class="promo-main slick-initialized slick-slider"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5120px; transform: translate3d(-1280px, 0px, 0px);" role="region" aria-label="Home Page Promotions">
+
+<!-- RESTORED SLIDE 1 -->
+<div class="promo-content slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1280px;" tabindex="-1" role="option">
+<div class="image-holder">
+<img class="promo-img promo-img-desktop" src="/static/image/1-202605-Checking-350.jpg" alt="Family at beach" style="height: 100%; object-fit: cover; object-position: center top; width: 100%;">
+<img class="promo-img promo-img-mobile" src="/static/image/1-202605-Checking-350-Mobile.jpg" alt="Family at beach" style="height: 100%; object-fit: cover; object-position: center top; width: 100%;">
+<div class="promo-text-holder">
+<div class="promo-text"><span><h1>Get $350 when you open a Free Checking account</h1><h2><a class="btn-arrow promo-arrow" aria-label="main promotional link to Get $350 when you open a Free Checking account" href="/home/standalone/checking350" rel=" noopener noreferrer" tabindex="0">Learn more &nbsp;<span class="fa fa-arrow-circle-right"></span></a></h2></span></div>
+</div>
+</div>
+</div>
+
+<!-- RESTORED SLIDE 2 -->
+<div class="promo-content slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1280px;" tabindex="-1" role="option">
+<div class="image-holder">
+<img class="promo-img promo-img-desktop" src="/static/image/1-202604-Mortgage-Assistance-Programs.jpg" alt="Family enjoying their new home" style="height: 100%; object-fit: cover; object-position: center top; width: 100%;">
+<img class="promo-img promo-img-mobile" src="/static/image/1-202604-Mortgage-Assistance-Programs.jpg" alt="Family enjoying their new home" style="height: 100%; object-fit: cover; object-position: center top; width: 100%;">
+<div class="promo-text-holder">
+<div class="promo-text"><span><h1>Let's make that dream home more affordable</h1><h2><a class="btn-arrow promo-arrow" aria-label="main promotional link to Let's make that dream home more affordable" href="/home/personal/borrow/mortgage-assistance-programs" rel=" noopener noreferrer" tabindex="-1">View our mortgage assistance programs &nbsp;<span class="fa fa-arrow-circle-right"></span></a></h2></span></div>
+</div>
+</div>
+</div>
+
+</div></div>
+<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button></div>
+</div>
+</section>
+
+<!-- RESTORED CROSS-SELL PROMOS -->
+<section class="inner centerAlignTopHolder" aria-label="cross sell">
+<div class="promo-small centerAlignTop bg replaceImage">
+<img src="/static/image/2-201708-Personal-Savings.jpg" alt="2 201708 Personal Savings" class="replaceImageTarget">
+<div class="inner">
+<p><img src="/static/image/2-201708-Personal-Savings.jpg" alt="2 201708 Personal Savings" style="display: none;"></p>
+<h2>I want to start saving for a&nbsp;vacation.</h2>
+<p><a class="btn-arrow" href="/home/personal/bank/savings" rel=" noopener noreferrer">View our Personal Savings options</a></p>
+</div>
+</div>
+<div class="promo-small centerAlignTop">
+<div class="inner">
+<h2>Fraud &amp; Security Tips</h2>
+<p><a class="btn-arrow" href="/home/privacy-security/fraud-tips" rel=" noopener noreferrer">Protect yourself from cyber security threats posed by scammers, hackers and phishing attempts</a></p>
+</div>
+</div>
+</section>
+
+<!-- RESTORED BLOG/NEWS ARTICLES -->
+<div class="inner">
+<div class="blog-wrap">
+<div class="inner-wrap">
+<article>
+<span>
+<img src="/home/fiFiles/static/images/12-202603-News-Hartford.jpg" alt="Hartford Banking Center" class="promo-img">
+<h2>Simple just moved in - Hartford Banking Center now open</h2>
+<p>PeoplesBank has added to its Connecticut footprint with a new banking center at 151 Asylum Street in Hartford. Stop by today for exclusive, limited time offers.</p>
+</span>
+<a href="/home/standalone/hartford-banking-center" class="btn-arrow" aria-label="link to promotional article 1" rel=" noopener noreferrer">Learn More</a>
+</article>
+<article>
+<span>
+<img src="/home/fiFiles/static/images/12-202506-News-PeoplesBank-Arena.jpg" alt="PeoplesBank Arena" class="promo-img">
+<h2>PeoplesBank Arena in Hartford</h2>
+<p>PeoplesBank has secured the naming rights to Hartford's 16,000-seat world-class sports and entertainment venue, which will be called PeoplesBank Arena.</p>
+</span>
+<a href="/home/misc/news/2025/peoplesbank-arena" class="btn-arrow" aria-label="link to promotional article 2" rel=" noopener noreferrer">Read More</a>
+</article>
+<article>
+<span>
+<img src="/home/fiFiles/static/images/12-202112-News-Corporate-Responsibility.jpg" alt="Corporate Responsibility" class="promo-img">
+<h2>It's Not Just Corporate Responsibility, It's a Human Responsibility</h2>
+<p>As a mutual bank, giving back is part of our culture, woven into the fabric of who we are and what we stand for.</p>
+</span>
+<a href="/home/community/corporate-responsibility" class="btn-arrow" aria-label="link to promotional article 3" rel=" noopener noreferrer">Learn More</a>
+</article>
+</div>
+</div>
+</div>
+
+</main>
+
+<!-- =========================================
+     NEW SECTION: WHY CHOOSE PEOPLESBANK
+     ========================================= -->
+<section class="why-choose-us" style="background: #f4f7f6; padding: 4em 0; margin-top: 2em;">
+    <div class="inner-wrap" style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 15px;">
+        <h2 style="color: #00529b; font-size: 2.5em; margin-bottom: 0.5em;">Why Choose PeoplesBank?</h2>
+        <p style="color: #555; font-size: 1.2em; margin-bottom: 3em;">Local banking made simple. We're here to help you achieve your financial goals.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2em;">
+            <div style="flex: 1 1 250px; max-width: 300px; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <i class="fa fa-shield-alt" style="font-size: 3em; color: #277eb9; margin-bottom: 0.5em; display:block;"></i>
+                <h3 style="color: #373737;">Secure & Trusted</h3>
+                <p style="color: #666;">FDIC insured and backed by the full faith and credit of the U.S. Government.</p>
+            </div>
+            <div style="flex: 1 1 250px; max-width: 300px; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <i class="fa fa-handshake" style="font-size: 3em; color: #277eb9; margin-bottom: 0.5em; display:block;"></i>
+                <h3 style="color: #373737;">Community Focused</h3>
+                <p style="color: #666;">Proudly serving Western MA and Northern CT with local decision-making.</p>
+            </div>
+            <div style="flex: 1 1 250px; max-width: 300px; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <i class="fa fa-mobile-alt" style="font-size: 3em; color: #277eb9; margin-bottom: 0.5em; display:block;"></i>
+                <h3 style="color: #373737;">Digital Banking</h3>
+                <p style="color: #666;">Bank anytime, anywhere with our award-winning mobile and online banking.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================
+     NEW SECTION: FINANCIAL TOOLS & RESOURCES
+     ========================================= -->
+<section class="financial-tools" style="padding: 4em 0; background: #fff;">
+    <div class="inner-wrap" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+        <h2 style="color: #00529b; text-align: center; font-size: 2.5em; margin-bottom: 2em;">Financial Tools & Resources</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+            <a href="/home/personal/borrow/mortgage-rates" style="flex: 1 1 200px; max-width: 250px; text-align: center; padding: 2em; background: #eef5fb; border-radius: 8px; text-decoration: none; transition: transform 0.2s;">
+                <i class="fa fa-chart-line" style="font-size: 2.5em; color: #00529b; display: block; margin-bottom: 0.5em;"></i>
+                <h4 style="color: #00529b; margin: 0;">Mortgage Rates</h4>
+            </a>
+            <a href="https://financialtips.bankatpeoples.com/financial-calculators" style="flex: 1 1 200px; max-width: 250px; text-align: center; padding: 2em; background: #eef5fb; border-radius: 8px; text-decoration: none; transition: transform 0.2s;">
+                <i class="fa fa-calculator" style="font-size: 2.5em; color: #00529b; display: block; margin-bottom: 0.5em;"></i>
+                <h4 style="color: #00529b; margin: 0;">Calculators</h4>
+            </a>
+            <a href="/home/locations-hours" style="flex: 1 1 200px; max-width: 250px; text-align: center; padding: 2em; background: #eef5fb; border-radius: 8px; text-decoration: none; transition: transform 0.2s;">
+                <i class="fa fa-map-marker-alt" style="font-size: 2.5em; color: #00529b; display: block; margin-bottom: 0.5em;"></i>
+                <h4 style="color: #00529b; margin: 0;">Find a Branch</h4>
+            </a>
+            <a href="/home/contact-us" style="flex: 1 1 200px; max-width: 250px; text-align: center; padding: 2em; background: #eef5fb; border-radius: 8px; text-decoration: none; transition: transform 0.2s;">
+                <i class="fa fa-headset" style="font-size: 2.5em; color: #00529b; display: block; margin-bottom: 0.5em;"></i>
+                <h4 style="color: #00529b; margin: 0;">Contact Us</h4>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<section class="inner-wrap foot-top" aria-label="footer links">
+<div class="foot-column add-labels" data-prefix="footer column 1 link to: ">
+<h2 class="header">Open Account</h2>
+<ul>
+<li><a href="/home/personal/bank/checking" rel=" noopener noreferrer" aria-label="footer column 1 link to: Free Checking">Free Checking</a></li>
+<li><a href="/home/personal/bank/checking" rel=" noopener noreferrer" aria-label="footer column 1 link to: Choice Checking">Choice Checking</a></li>
+<li><a href="/home/personal/bank/checking" rel=" noopener noreferrer" aria-label="footer column 1 link to: Interest Checking">Interest Checking</a></li>
+</ul>
+<a class="btn-arrow btn-lg" href="/home/personal/borrow/mortgage" rel=" noopener noreferrer" aria-label="footer column 1 link to: Get a Mortgage">Get a Mortgage</a>
+<a class="btn-arrow btn-lg" href="/home/personal/borrow/home-equity" rel=" noopener noreferrer" aria-label="footer column 1 link to: Open a Home Equity Loan">Open a Home Equity Loan</a>
+</div>
+<div class="foot-column add-labels" data-prefix="footer column 2 link to: ">
+<h2 class="header">Get to know PeoplesBank</h2>
+<ul>
+<li><a href="/home/community" rel=" noopener noreferrer" aria-label="footer column 2 link to: Community">Community</a></li>
+<li><a href="/home/misc/news" rel=" noopener noreferrer" aria-label="footer column 2 link to: News">News</a></li>
+<li><a href="/home/misc/careers" rel=" noopener noreferrer" aria-label="footer column 2 link to: Careers">Careers</a></li>
+</ul>
+<ul class="social-links">
+<li><a href="http://www.linkedin.com/company/peoplesbank_2" aria-label="link to linkedin" rel=" noopener noreferrer"><span class="fa-brands fa-linkedin-in"></span></a></li>
+<li><a href="https://www.facebook.com/bankatpeoples" aria-label="link to facebook" rel=" noopener noreferrer"><span class="fa-brands fa-facebook-f"></span></a></li>
+<li><a href="https://twitter.com/bankatpeoples" aria-label="link to twitter" rel=" noopener noreferrer"><span class="fa-brands fa-x-twitter"></span></a></li>
+<li><a href="http://www.youtube.com/bankatpeoples" aria-label="link to youtube" rel=" noopener noreferrer"><span class="fa-brands fa-youtube"></span></a></li>
+<li><a href="https://www.instagram.com/bankatpeoples/" aria-label="link to instagram" rel=" noopener noreferrer"><span class="fa-brands fa-instagram"></span></a></li>
+</ul>
+</div>
+<div class="foot-column add-labels" data-prefix="footer column 3 link to: ">
+<h2 class="header">We're here to help</h2>
+<ul>
+<li class="info"><a href="tel:+1-877-888-1388" rel=" noopener noreferrer" aria-label="footer column 3 link to: 877.888.1388"><span class="fa fa-phone"></span> 877.888.1388</a></li>
+<li class="info"><a href="/home/locations-hours" rel=" noopener noreferrer" aria-label="footer column 3 link to: Locations/Hours"><span class="fa fa-location-dot"></span> Locations/Hours</a></li>
+<li class="info"><a href="mailto:info@bankatpeoples.com" rel=" noopener noreferrer" aria-label="footer column 3 link to: Email"><span class="fa fa-envelope"></span> Email</a></li>
+</ul>
+<ul>
+<li class="info"><a href="https://financialtips.bankatpeoples.com/financial-calculators" rel=" noopener noreferrer" aria-label="footer column 3 link to: Calculators"><span class="fa fa-calculator"></span> Calculators</a></li>
+</ul>
+</div>
+</section>
+<div class="foot-bottom">
+<div class="inner-wrap">
+<div class="foot-left">
+<ul class="address-links">
+<li>PeoplesBank</li>
+<li>Holyoke, Massachusetts 01040</li>
+</ul>
+<ul class="foot-links">
+<li><a href="/home/" rel=" noopener noreferrer">Home</a></li>
+<li><a href="/home/misc/about" rel=" noopener noreferrer">About</a></li>
+<li><a href="/home/site/map" rel=" noopener noreferrer">Sitemap</a></li>
+<li><a href="/home/privacy-security" rel=" noopener noreferrer">Privacy/Security</a></li>
+<li><a href="https://www.consumer.ftc.gov/features/feature-0014-identity-theft" rel=" noopener noreferrer">Identity Theft</a></li>
+<li class="infoWealth">Routing # 211871772</li>
+<li class="infoWealth">NMLS #644060</li>
+<li class="infoWealth"><a href="https://www.bankatpeoples.com/home/fiFiles/static/documents/LoanOriginationText.pdf" target="_blank" rel=" noopener noreferrer">NMLS Registry</a></li>
+<li><a href="/home/contact-us" rel=" noopener noreferrer">Contact Us</a></li>
+</ul>
+<div><p class="depositMSG">All deposit accounts and loan applications are subject to approval.</p></div>
+</div>
+<div class="foot-right">
+<ul class="compliance-links">
+<li>
+<span class="foot-fdic-compliance">
+<svg id="foot_fdic_img" data-name="foot_fdic_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390 16" role="img" aria-labelledby="foot_fdic_img_title" focasable="false">
+<title id="foot_fdic_img_title">FDIC: FDIC-Insured - Backed by the full faith and credit of the U.S. Government</title>
+<defs><style>#foot_fdic_img .cls-1 { fill: #ffffff; } #foot_fdic_img .cls-2, #foot_fdic_img .cls-3 { fill: none; } #foot_fdic_img .cls-3 { clip-path: url(#clippath); } #foot_fdic_img .cls-4 { fill: #ffffff; }</style><clipPath id="clippath"><rect class="cls-2" x=".42" y=".06" width="389.15" height="15.89"></rect></clipPath></defs>
+<g class="cls-3"><path class="cls-1" d="m34.92,3.86c1.3,0,2.55.58,3.32,1.66V.82c-1.12-.48-2.24-.76-3.46-.76-2.05,0-4.11.92-5.54,2.44-1.39,1.48-2.14,3.46-2.14,5.52,0,2.24.74,4.2,2.34,5.7,1.51,1.42,3.44,2.22,5.47,2.22,1.18,0,2.08-.3,3.34-.7v-4.7c-.79.98-2.03,1.6-3.26,1.6-2.36,0-3.94-1.72-3.94-4.1s1.56-4.18,3.88-4.18m-12.12,11.69h3.78V.46h-3.78v15.09Zm-8.67-3.32h-.85V3.78h.89c2.44,0,4.15,1.52,4.15,4.22,0,2.94-1.93,4.22-4.19,4.22M14.86.46h-5.37v15.09h5.37c4.04,0,7.4-3.3,7.4-7.54S18.92.46,14.86.46M.42,15.54h3.78v-5.92h4.15v-3.32h-4.15v-2.52h4.58V.46H.42v15.09Z"></path><path class="cls-4" d="m387.76,11.08c.43,0,.8-.14,1.05-.25l-.19-.63c-.17.08-.37.17-.58.17-.53,0-.71-.23-.71-.69,0-.15.01-.27.03-.41l.65-3.18h1.43l.14-.71h-1.41l.31-1.53h-.74l-.41,1.53-.87.06-.13.65h.81l-.65,3.13c-.02.21-.06.39-.06.62,0,.69.35,1.23,1.33,1.23"></path></g>
+</svg>
+</span>
+</li>
+<li><a href="https://www.hud.gov/program_offices/fair_housing_equal_opp" rel=" noopener noreferrer"><img src="/static/image/EHL.png" alt="Equal Housing Lender"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<style>
+footer .foot-top::before {
+background-image: url(/static/image/201705-New-Site-Footer.jpg);
+}
+</style>
+
+</body>
+</html>

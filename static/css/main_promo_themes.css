@@ -1,0 +1,76 @@
+.promo-main .promo-text,
+#wealth .promo-main .promo-text,
+.promo-main .promo-content .promo-text,
+#wealth .promo-main .promo-content .promo-text {
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0) 100%);	
+}
+
+.promo-main .no-fade .promo-text,
+#wealth .promo-main .no-fade .promo-text,
+.promo-main .promo-content.no-fade .promo-text,
+#wealth .promo-main .promo-content.no-fade .promo-text {
+	background: transparent;	
+}
+
+
+/** * Default Theme *** */
+.promo-main .promo-content .promo-text h1 {color: #00529b;}
+#wealth .promo-main .promo-content .promo-text h1 { color: #00653b;}
+#backwealth .promo-main .promo-content .promo-text h1 { color: #00653b;}
+  
+.promo-main .promo-content .promo-text h2,
+.promo-main .promo-content .promo-text h2 a,
+.promo-main .promo-content .promo-text h2 a:hover,
+.promo-main .promo-content .promo-text h2 a:focus,
+.promo-main .promo-content .promo-text h2 a:active { color: #555; }
+
+#wealth .promo-main .promo-content .promo-text h2,
+#wealth .promo-main .promo-content .promo-text h2 a,
+#wealth .promo-main .promo-content .promo-text h2 a:hover,
+#wealth .promo-main .promo-content .promo-text h2 a:active,
+#backwealth .promo-main .promo-content .promo-text h2 a:focus,
+#backwealth .promo-main .promo-content .promo-text h2 a:hover,
+#backwealth .promo-main .promo-content .promo-text h2 a:active,
+#backwealth .promo-main .promo-content .promo-text h2 a:focus{ color: #00653b; }
+
+
+/** * Dark Theme *** */
+
+.promo-main .dark .promo-text,
+#wealth .promo-main .dark .promo-text,
+.promo-main .promo-content.dark .promo-text,
+#wealth .promo-main .promo-content.dark .promo-text {
+	background: linear-gradient(to left, rgba(0, 0,0, 0.95), rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);	
+}
+
+.promo-main .dark.no-fade .promo-text,
+#wealth .promo-main .dark.no-fade .promo-text,
+.promo-main .promo-content.dark.no-fade .promo-text,
+#wealth .promo-main .promo-content.dark.no-fade .promo-text {
+	background: transparent;	
+}
+
+.promo-main .promo-content.dark .promo-text h1,
+#wealth .promo-main .promo-content.dark .promo-text h1,
+#backwealth .promo-main .promo-content.dark .promo-text h1 { color: #fff;}
+
+.promo-main .promo-content.dark .promo-text h2,
+.promo-main .promo-content.dark .promo-text h2 a,
+.promo-main .promo-content.dark .promo-text h2 a:hover,
+.promo-main .promo-content.dark .promo-text h2 a:focus,
+.promo-main .promo-content.dark .promo-text h2 a:active { color: #00C7B1; }
+
+#wealth .promo-main .promo-content.dark .promo-text h2,
+#wealth .promo-main .promo-content.dark .promo-text h2 a,
+#wealth .promo-main .promo-content.dark .promo-text h2 a:hover,
+#wealth .promo-main .promo-content.dark .promo-text h2 a:focus,
+#wealth .promo-main .promo-content.dark .promo-text h2 a:active { color: #00C7B1; }
+
+#backwealth .promo-main .promo-content.dark .promo-text h2,
+#backwealth .promo-main .promo-content.dark .promo-text h2 a,
+#backwealth .promo-main .promo-content.dark .promo-text h2 a:hover,
+#backwealth .promo-main .promo-content.dark .promo-text h2 a:focus,
+#backwealth .promo-main .promo-content.dark .promo-text h2 a:active { color: #00C7B1; }
+
+
+
