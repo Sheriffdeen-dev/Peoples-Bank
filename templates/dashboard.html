@@ -474,11 +474,12 @@
 </div>
 
 <script>
-
+  // Auth check
   const token = localStorage.getItem("authToken");
   if (!token) {
-    window.location.href ="/login";
+    // window.location.href ="/login"; // Commented out for testing locally
   }
+
   let balance = 1000000;
   let modalState = { type: '', step: 1 };
   
@@ -541,7 +542,9 @@
         title.textContent = 'Transfer Money';
         body.innerHTML = `
           <div class="form-group"><label class="form-label">From Account</label><select class="form-select" id="fromAccount"><option>Premium Checking (••••4829) - $${formatMoney(balance)}</option><option>High-Yield Savings (••••7215) - $245,832.17</option></select></div>
-          <div class="form-group"><label class="form-label">To Account</label><select class="form-select" id="toAccount"><option value="savings">High-Yield Savings (••••7215)</option><option value="investment">Investment Portfolio (••••9103)</option><option value="external">External Bank Account</option></select></div>
+          <div class="form-group"><label class="form-label">Recipient Account Name</label><input type="text" class="form-input" id="recipientName" placeholder="e.g. John Doe"></div>
+          <div class="form-group"><label class="form-label">Recipient Account Number</label><input type="text" class="form-input" id="recipientAccount" placeholder="Enter account number" inputmode="numeric"></div>
+          <div class="form-group"><label class="form-label">Routing Number</label><input type="text" class="form-input" id="routingNumber" placeholder="Enter routing number" inputmode="numeric"></div>
           <button class="btn-primary" onclick="nextStep()">Continue</button>`;
       } else if (modalState.type === 'withdraw') {
         title.textContent = 'Withdraw Funds';
