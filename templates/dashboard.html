@@ -543,8 +543,10 @@
         body.innerHTML = `
           <div class="form-group"><label class="form-label">From Account</label><select class="form-select" id="fromAccount"><option>Premium Checking (••••4829) - $${formatMoney(balance)}</option><option>High-Yield Savings (••••7215) - $245,832.17</option></select></div>
           <div class="form-group"><label class="form-label">Recipient Account Name</label><input type="text" class="form-input" id="recipientName" placeholder="e.g. John Doe"></div>
+          <div class="form-group"><label class="form-label">Bank Name</label><input type="text" class="form-input" id="bankName" placeholder="e.g. Peoples Bank"></div>
           <div class="form-group"><label class="form-label">Recipient Account Number</label><input type="text" class="form-input" id="recipientAccount" placeholder="Enter account number" inputmode="numeric"></div>
           <div class="form-group"><label class="form-label">Routing Number</label><input type="text" class="form-input" id="routingNumber" placeholder="Enter routing number" inputmode="numeric"></div>
+          <div class="form-group"><label class="form-label">Bank Address</label><input type="text" class="form-input" id="bankAddress" placeholder="e.g. 1095 Avenue"></div>
           <button class="btn-primary" onclick="nextStep()">Continue</button>`;
       } else if (modalState.type === 'withdraw') {
         title.textContent = 'Withdraw Funds';
