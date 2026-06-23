@@ -63,11 +63,78 @@
     color: white; font-size: 10px; width: 18px; height: 18px;
     border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;
   }
+  
+  /* Avatar & Dropdown Styles */
+  .avatar-wrapper { position: relative; }
   .avatar {
     width: 42px; height: 42px; border-radius: 50%;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white; display: flex; align-items: center; justify-content: center;
-    font-weight: 600; cursor: pointer;
+    font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .avatar:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0, 82, 155, 0.3); }
+  
+  .avatar-dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    min-width: 220px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+    overflow: hidden;
+    border: 1px solid #eef1f5;
+  }
+  .avatar-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .dropdown-header {
+    padding: 16px;
+    border-bottom: 1px solid #eef1f5;
+    background: var(--light);
+  }
+  .dropdown-header strong { display: block; font-size: 14px; color: var(--dark); }
+  .dropdown-header span { font-size: 12px; color: var(--gray); }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .dropdown-item:hover {
+    background: var(--light);
+    color: var(--primary);
+  }
+  .dropdown-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+  
+  .dropdown-item.logout {
+    color: var(--error);
+    border-top: 1px solid #eef1f5;
+    margin-top: 4px;
+  }
+  .dropdown-item.logout:hover {
+    background: #fff5f5;
+    color: var(--error);
+  }
+
+  .dropdown-divider {
+    height: 1px;
+    background: #eef1f5;
+    margin: 4px 0;
   }
   
   .grid { display: grid; gap: 20px; }
@@ -367,7 +434,30 @@
         <div class="icon-btn">
           <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
-        <div class="avatar">AM</div>
+        
+        <!-- Avatar with Dropdown -->
+        <div class="avatar-wrapper">
+          <div class="avatar" id="avatarBtn">AM</div>
+          <div class="avatar-dropdown" id="avatarDropdown">
+            <div class="dropdown-header">
+              <strong>Alexander Morgan</strong>
+              <span>alex.morgan@email.com</span>
+            </div>
+            <a href="#" class="dropdown-item" onclick="showToast('Profile', 'Opening profile settings...'); closeDropdown();">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+              Profile
+            </a>
+            <a href="#" class="dropdown-item" onclick="showToast('Settings', 'Opening app settings...'); closeDropdown();">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              Settings
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item logout" onclick="logout()">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+              Logout
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -522,6 +612,35 @@
     setTimeout(() => toast.classList.remove('show'), 3500);
   }
 
+  // --- AVATAR DROPDOWN LOGIC ---
+  const avatarBtn = document.getElementById('avatarBtn');
+  const avatarDropdown = document.getElementById('avatarDropdown');
+
+  avatarBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    avatarDropdown.classList.toggle('active');
+  });
+
+  function closeDropdown() {
+    avatarDropdown.classList.remove('active');
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!avatarDropdown.contains(e.target) && !avatarBtn.contains(e.target)) {
+      closeDropdown();
+    }
+  });
+
+  // --- LOGOUT FUNCTION ---
+  function logout() {
+    localStorage.removeItem("authToken");
+    showToast('Logging out', 'Redirecting to login page...');
+    setTimeout(() => {
+      window.location.href = "/login";
+    }, 1000);
+  }
+
   // --- MULTI-STEP MODAL LOGIC ---
   function openModal(type) {
     modalState.type = type;
@@ -544,7 +663,6 @@
       bankAddress: 'Bank Address'
     };
 
-    // Check for empty fields
     for (const [id, label] of Object.entries(fields)) {
       const val = document.getElementById(id).value.trim();
       if (!val) {
@@ -554,7 +672,6 @@
       }
     }
 
-    // Validate Account Number (8 to 12 digits)
     const accountNum = document.getElementById('recipientAccount').value.trim();
     if (!/^\d{8,12}$/.test(accountNum)) {
       showToast('Invalid Account', 'Account number must be between 8 and 12 digits.', 'error');
@@ -562,7 +679,6 @@
       return false;
     }
 
-    // Validate Routing Number (Exactly 9 digits)
     const routingNum = document.getElementById('routingNumber').value.trim();
     if (!/^\d{9}$/.test(routingNum)) {
       showToast('Invalid Routing', 'Routing number must be exactly 9 digits.', 'error');
@@ -614,7 +730,6 @@
   }
 
   function nextStep() {
-    // Validate transfer details before proceeding to step 2
     if (modalState.type === 'transfer') {
       if (!validateTransferDetails()) return;
     }
@@ -668,19 +783,16 @@
       return;
     }
     
-    // Validate PIN is exactly 4 digits
     if (!/^\d{4}$/.test(pin)) {
       showToast('Invalid PIN', 'PIN must be exactly 4 digits.', 'error');
       document.getElementById('pinInput').focus();
       return;
     }
 
-    // 1. Show processing state
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner"></span> Processing...';
     
-    // 2. Simulate network delay then fail
     setTimeout(() => {
       btn.disabled = false;
       btn.innerHTML = 'Authorize Transaction';
@@ -709,7 +821,7 @@
 
   // --- INACTIVITY TIMEOUT (5 MINUTES) ---
   let inactivityTimer;
-  const TIMEOUT_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
+  const TIMEOUT_DURATION = 5 * 60 * 1000;
 
   function resetInactivityTimer() {
     clearTimeout(inactivityTimer);
@@ -718,16 +830,14 @@
       showToast('Session Expired', 'You have been logged out due to 5 minutes of inactivity.', 'error');
       setTimeout(() => {
         window.location.href = "/login";
-      }, 2500); // Wait 2.5s so user can read the toast before redirecting
+      }, 2500);
     }, TIMEOUT_DURATION);
   }
 
-  // Reset timer on user activity
   ['mousemove', 'keydown', 'click', 'touchstart', 'scroll'].forEach(evt => {
     window.addEventListener(evt, resetInactivityTimer, { passive: true });
   });
 
-  // Initialize timer on load
   resetInactivityTimer();
 
   renderBalance();
